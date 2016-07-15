@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "org.unidescription.{project.title_code}"
+	id		= "org.unidescription.3dbrettphilfortvancouvernationalhistoricsite"
 	version 	= "1.0.0">
 
-	<name>{project.title}</name>
+	<name>3_D_Brett_Phil_Fort Vancouver National Historic Site</name>
 
 	<description>
-		{project.description}
+		TBA
 	</description>
 
 	<author href="http://www.unidescription.org"
-		email="{owner.email}">
-		{owner.name}
+		email="brett.oppegaard@gmail.com">
+		Brett Oppegaard
 	</author>
 
 	<gap:platforms>
