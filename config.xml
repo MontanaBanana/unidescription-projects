@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "org.unidescription.{project.title_code}"
+	id		= "org.unidescription.thecagrandamilano"
 	version 	= "1.0.0">
 
-	<name>{project.title}</name>
+	<name>The Ca' Granda (Milano)</name>
 
 	<description>
-		{project.description}
+		A guide for visiting the Cà Granda in the center of Milan. Built in the Fifteenth century, the former hospital is now a campus for the University of Milan.
 	</description>
 
 	<author href="http://www.unidescription.org"
-		email="{owner.email}">
-		{owner.name}
+		email="zocchiste@hotmail.it">
+		StefanoZocchi
 	</author>
 
 	<gap:platforms>
