@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "org.unidescription.{project.title_code}"
+	id		= "org.unidescription.dwomensrightsnationalhistoricalparktuybrett"
 	version 	= "1.0.0">
 
-	<name>{project.title}</name>
+	<name>4_D_Women's Rights National Historical Park_Tuy_brett</name>
 
 	<description>
-		{project.description}
+		Women's Rights National Historical Park, The home of the first women's right convention July 19-20, 1848.
 	</description>
 
 	<author href="http://www.unidescription.org"
-		email="{owner.email}">
-		{owner.name}
+		email="brett.oppegaard@gmail.com">
+		Brett Oppegaard
 	</author>
 
 	<gap:platforms>
