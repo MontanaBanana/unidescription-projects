@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "org.unidescription.{project.title_code}"
+	id		= "org.unidescription.thecagrandatestapp"
 	version 	= "1.0.0">
 
-	<name>{project.title}</name>
+	<name>The Ca' Granda (Test app)</name>
 
 	<description>
-		{project.description}
+		Test app for the University of Milan -- DO NOT RELEASE
 	</description>
 
 	<author href="http://www.unidescription.org"
-		email="{owner.email}">
-		{owner.name}
+		email="zocchiste@hotmail.it">
+		StefanoZocchi
 	</author>
 
 	<gap:platforms>
