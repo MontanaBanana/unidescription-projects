@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "org.unidescription.{project.title_code}"
+	id		= "org.unidescription.hagermanfossilbedsnationalmonument"
 	version 	= "1.0.0">
 
-	<name>{project.title}</name>
+	<name>Hagerman Fossil Beds National Monument</name>
 
 	<description>
-		{project.description}
+		Audio Description for the Hagerman Fossil Beds National Monument brochure. This text and its audio files provide the content of the words and images in the brochure entirely as text. This aims to help people who are blind, low-vision, or learn better through audio.  
 	</description>
 
 	<author href="http://www.unidescription.org"
-		email="{owner.email}">
-		{owner.name}
+		email="brett.oppegaard@gmail.com">
+		Brett Oppegaard
 	</author>
 
 	<gap:platforms>
