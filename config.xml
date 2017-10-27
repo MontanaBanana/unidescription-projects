@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		= "org.unidescription.{project.title_code}"
+	id		= "org.unidescription.dpinnaclesnationalpark"
 	version 	= "1.0.0">
 
-	<name>{project.title}</name>
+	<name>5_D_Pinnacles National Park</name>
 
 	<description>
-		{project.description}
+		This is the audio-described translation of the official print brochure that Pinnacles National Park visitors receive.  This version includes all of the text from the original brochure and provides interpretive audio description of all images.
 	</description>
 
 	<author href="http://www.unidescription.org"
-		email="{owner.email}">
-		{owner.name}
+		email="tuyhayes@hawaii.edu">
+		Tuyet Hayes
 	</author>
 
 	<gap:platforms>

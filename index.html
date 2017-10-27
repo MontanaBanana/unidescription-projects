@@ -1,18 +1,1151 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<title>{project.title}</title>
-		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
-		
-		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
-		
+		<meta charset="utf-8">
+		<title>5_D_Pinnacles National Park</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="This is the audio-described translation of the official print brochure that Pinnacles National Park visitors receive.  This version includes all of the text from the original brochure and provides interpretive audio description of all images.">
+		<meta name="author" content="tuyhayes@hawaii.edu">
+	    
+	     <!-- phonegap -->
+	    <!--<script type="text/javascript" src="phonegap.js"></script>-->
+	    
+	    <!-- Bootstrap -->
+	    <!--<link rel="stylesheet" href="https://www.unidescription.org/css/nps-bootstrap.css">-->
+	    
+	    <!-- Custom Fonts -->
+	    <!--<link href="https://www.unidescription.org/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+	
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script type="text/javascript" src="https://www.unidescription.org/js/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <!--<script type="text/javascript" src="https://www.unidescription.org/js/nps-bootstrap.min.js"></script>-->
+        <!--<script type="text/javascript" src="https://www.unidescription.org/js/autosize.js"></script>-->
+        <!--<script type="text/javascript" src="https://www.unidescription.org/js/jquery-sortable.min.js"></script>-->
+
+	
+	    <!-- Unidescription custom JS -->
+	    <!--<script type="text/javascript" src="https://www.unidescription.org/js/unidescription.js"></script>	-->
+	    
+	    <!--<link href="https://www.unidescription.org/css/unidescription.css" rel="stylesheet">-->
+
+        <!-- Dependencies -->
+        <script src="https://www.unidescription.org/ableplayer/thirdparty/modernizr.custom.js"></script>
+        <script src="https://www.unidescription.org/ableplayer/thirdparty/js.cookie.js"></script>
+
+        <!-- CSS --> 
+        <link rel="stylesheet" href="https://www.unidescription.org/ableplayer/build/ableplayer.min.css" type="text/css"/>
+
+        <!-- JavaScript -->
+        <script src="https://www.unidescription.org/ableplayer/build/ableplayer.min.js"></script>
+
+        <style>
+/*
+        html, body {
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+*/
+        </style>
+
 	</head>
 	<body>
-        <p>updated master</p>
-		<p>{project.description}</p>
 
+        <div id="toc">
+            <h1>5_D_Pinnacles National Park</h1>
+            <p>This is the audio-described translation of the official print brochure that Pinnacles National Park visitors receive.  This version includes all of the text from the original brochure and provides interpretive audio description of all images.</p>
+        </div>
+        
+        <main>
+            <nav>
+                <div width="50%">
+                        <ul>
+                                                    <li><a href="#5454">OVERVIEW: About this audio-described brochure</a>                                                    </li>                                                                    <li><a href="#5455">OVERVIEW: Pinnacles National Park</a>                                                    </li>                                                                    <li><a href="#5456">OVERVIEW: Front side of brochure</a>                                                            <ul>
+                                                                                                                <li><a href="#5470">IMAGE: Cover Photo</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5457">TEXT:  The Forces of Beauty</a>                                                            <ul>
+                                                                                                                <li><a href="#5459">IMAGE: Poppies near an oak woodland</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5458">IMAGE: High Peaks in Autumn</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5460">IMAGE: Balconies</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5461">IMAGE: Talus boulders</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5471">IMAGE:  California buckwheat set against Machete Ridge in winter</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5472">IMAGE:  Indian warrior and manzanita</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5473">TEXT: Critical Habitat for California Critters</a>                                                            <ul>
+                                                                                                                <li><a href="#5474">IMAGE: Bat</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5475">IMAGE: California red-legged frog</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5476">IMAGE:  California Condor</a>                                                                                        </li>                                                                                                                                                    <li><a href="#6169">IMAGE: Poppies</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5494">TEXT:  Faults, Volcanoes, and Erosion</a>                                                            <ul>
+                                                                                                                <li><a href="#5495">IMAGE:  San Andreas Fault</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5496">TEXT:  Grassroots Movement: The People's Park</a>                                                            <ul>
+                                                                                                                <li><a href="#5497">IMAGE: Woman in cave</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5498">IMAGE: Man and geological formation</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5462">OVERVIEW: Back side of brochure</a>                                                    </li>                                                                    <li><a href="#5463">TEXT AND IMAGES: Fantastic Flowers</a>                                                    </li>                                                                    <li><a href="#5464">TEXT: Excellent Exploration</a>                                                            <ul>
+                                                                                                                <li><a href="#5465">TEXT: Hiking</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5466">TEXT: Exploring the Two Caves</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5467">TEXT:  When to visit</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5507">TEXT:  Our birds and bats</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5508">TEXT:  A Wilderness Wonder</a>                                                    </li>                                                                    <li><a href="#5509">TEXT: Try Out a Trail</a>                                                            <ul>
+                                                                                                                <li><a href="#5510">TEXT: East Side Trails</a>                                                                                            <ul>
+                                                                                                                                                        <li><a href="#5511">TEXT: Pinnacles Visitor Center to Bear Gulch day use area</a></li>                                                                                                                                                                                                            <li><a href="#5512">TEXT:  South Wilderness Trail</a></li>                                                                                                                                                                                                            <li><a href="#5513">TEXT:  Pinnacles Visitor Center to Balconies Cave</a></li>                                                                                                                                                                                                            <li><a href="#5514">TEXT:  Moses Spring–Rim Trail Loop</a></li>                                                                                                                                                                                                            <li><a href="#5515">TEXT:  Condor Gulch–High Peaks Loop</a></li>                                                                                                                                                                                                            <li><a href="#5516">TEXT:  Chalone Peak Trail</a></li>                                                                                                                                                                                                            <li><a href="#5517">TEXT:  Old Pinnacles Trail to Balconies Cave</a></li>                                                                                                                                                    </ul>
+                                                                                        </li>                                                                                                                                                    <li><a href="#5518">TEXT:  West Side Trails</a>                                                                                            <ul>
+                                                                                                                                                        <li><a href="#5521">TEXT:  Juniper Canyon Loop</a></li>                                                                                                                                                                                                            <li><a href="#5520">TEXT:  Balconies Cliffs–Balconies Cave Loop</a></li>                                                                                                                                                                                                            <li><a href="#5519">TEXT:  North Wilderness Trail Loop</a></li>                                                                                                                                                                                                            <li><a href="#5522">TEXT:  High Peaks–Balconies Cave Loop</a></li>                                                                                                                                                    </ul>
+                                                                                        </li>                                                                                                                                                    <li><a href="#5534">IMAGE: Bear Gulch Cave</a>                                                                                        </li>                                                                                                                                                    <li><a href="#5523">MAPS:  Pinnacles National Park</a>                                                                                            <ul>
+                                                                                                                                                        <li><a href="#5524">MAP:  Area Map</a></li>                                                                                                                                                                                                            <li><a href="#5525">MAP:  Park Map</a></li>                                                                                                                                                                                                            <li><a href="#5526">MAP: Detail Map</a></li>                                                                                                                                                    </ul>
+                                                                                        </li>                                                                                                                                                    <li><a href="#5527">TEXT:  What You Need to Know</a>                                                                                            <ul>
+                                                                                                                                                        <li><a href="#5528">TEXT:  East Entrance</a></li>                                                                                                                                                                                                            <li><a href="#5529">TEXT:  West Entrance</a></li>                                                                                                                                                                                                            <li><a href="#5530">TEXT:  Loding, Food, and Gas</a></li>                                                                                                                                                                                                            <li><a href="#5531">TEXT:  Weather, Heat, and Water</a></li>                                                                                                                                                                                                            <li><a href="#5532">TEXT:  Pets</a></li>                                                                                                                                                                                                            <li><a href="#5533">TEXT:  Safety and Regulations</a></li>                                                                                                                                                    </ul>
+                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#5468">OVERVIEW: Accessibility</a>                                                    </li>                                                                    <li><a href="#5469">OVERVIEW: More information</a>                                                    </li>                                                         
+                        </ul>
+                </div>
+            </nav>
+
+                                                              
+                      <h2 id="5454">OVERVIEW: About this audio-described brochure</h2>
+                      <a name="5454"></a>
+
+                      
+                                                                                            <p>Provide an introduction to the audio described brochure here.  See "component notes" section below for further guidance and example.</p>                                    <div>
+                                                                        <audio id="audio-5454" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5454" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887590-1449813638.txt.wav.mp3" >OVERVIEW: About this audio-described brochure</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502897818-1721100520.txt.wav.mp3">Description of OVERVIEW: About this audio-described brochure</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                              
+                      <h2 id="5455">OVERVIEW: Pinnacles National Park</h2>
+                      <a name="5455"></a>
+
+                      
+                                                                                            <p>Provide a brief introduction to the park, as an overview of the highlights. See "component notes" below for further guidance and examples.</p><p><br></p>                                    <div>
+                                                                        <audio id="audio-5455" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5455" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887590-33821984.txt.wav.mp3" >OVERVIEW: Pinnacles National Park</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502897946-561147845.txt.wav.mp3">Description of OVERVIEW: Pinnacles National Park</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                              
+                      <h2 id="5456">OVERVIEW: Front side of brochure</h2>
+                      <a name="5456"></a>
+
+                      
+                                                                                            <p>Provide a brief (50-100 words) overview of the major sections/features of the front side of the brochure.  See "component notes" section below for further guidance and examples.</p>                                    <div>
+                                                                        <audio id="audio-5456" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5456" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887591-478078192.txt.wav.mp3" >OVERVIEW: Front side of brochure</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1506899365-1910872277.txt.wav.mp3">Description of OVERVIEW: Front side of brochure</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Cover Photo </h3>
+                                            <a name="5470"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>Larry Carver</p><br><p>DESCRIPTION: &nbsp;&nbsp;</p><p>The rocky spires of the Pinnacles tower above a dense layer of fog. A couple of sparse grey pines cling to the reddish-brown rocks, which are crossed by fractures and crevices and sporadically dotted with pale green lichen. Beyond the Pinnacles on the left stands the highest point in the park, North Chalone Peak, also rising up from the fog, while an even more distant line of hills on the right recedes into the cloud layer and disappears.</p><br><br>                                                <div>
+                                                    <audio id="audio-5470" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5470" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887591-1110558515.txt.wav.mp3" >IMAGE: Cover Photo</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506559637-1306273119.txt.wav.mp3">Description of IMAGE: Cover Photo</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="5457">TEXT:  The Forces of Beauty</h2>
+                      <a name="5457"></a>
+
+                      
+                                                                                            <p>The difference is immediately apparent. Rock spires, ramparts, and crags that bear no resemblance to the nearby foothills dominate the landscape here. Massive monoliths, sheer-walled canyons, and boulder-covered caves define millions of years of erosion, faulting, and tectonic plate movement.&nbsp;</p><p>
+
+Rising out of the chaparral-covered Gabilan Mountains, east of central California’s Salinas Valley, are the spectacular remains of part of an ancient volcanic field. One third of this field lies 195 miles to the southeast. Does this seem impossible? It is part of the story of the San Andreas Fault Zone, which runs just east of the park, and of the forces that have shaped this landscape for millions of years. It is the story of heat, frost, water, and wind wearing away rock. Fault action and earthquakes also account for Pinnacles’ talus caves, formed when boulders fell into deep, narrow gorges and lodged between the rock walls. These boulders form ceilings and areas of darkness, enticing visitors and many species of bats. Pinnacles’ topography is not all spires and crags. Much of the park consists of rolling hills that range in elevation from 824 feet along Chalone Creek to 3,304 feet atop North Chalone Peak.&nbsp;</p><p>
+
+Pinnacles was proclaimed a national monument in 1908. A national park since 2013, it includes over 26,000 acres—much of which is designated wilderness. The park protects natural and cultural features, recreational opportunities, and open space in an increasingly urban setting.&nbsp;
+
+</p><p>Pinnacles is a place for rejuvenation. People come to appreciate the unspoiled wilderness, hike the trails, climb rock walls, explore quiet caves, stargaze in clear night skies, and picnic or camp in the shade of ancient oaks. Please help us continue the work of previous generations and preserve Pinnacles National Park for future visitors.
+</p>                                    <div>
+                                                                        <audio id="audio-5457" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5457" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887591-434364834.txt.wav.mp3" >TEXT:  The Forces of Beauty</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502898991-2070532768.txt.wav.mp3">Description of TEXT:  The Forces of Beauty</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Poppies near an oak woodland </h3>
+                                            <a name="5459"></a>
+
+                                                                                                                                            <p>CREDIT:<br></p><p>David Meunch</p><br><p>DESCRIPTION:</p><p>This image shows a field of bright orange flowers with large, upturned petals and tall green grass. One small purple flower appears in the foreground. The meadow extends back into a hillside of distant oak trees.
+</p>
+<p><br></p>
+<br>                                                <div>
+                                                    <audio id="audio-5459" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5459" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887591-1447615185.txt.wav.mp3" >IMAGE: Poppies near an oak woodland</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560004-1447921576.txt.wav.mp3">Description of IMAGE: Poppies near an oak woodland</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: High Peaks in Autumn </h3>
+                                            <a name="5458"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>Paul G. Johnson</p><br><p>IMAGE DESCRIPTION:&nbsp;</p><p>Rusty red buckwheat bushes and golden grasses provide a sense of fall color in the Pinnacles landscape. The craggy rocks of the High Peaks, cast into sharp relief and shadow by the late afternoon light, rise up beyond the shrubs and grasses.
+</p><p><br></p>                                                <div>
+                                                    <audio id="audio-5458" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5458" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887591-132400215.txt.wav.mp3" >IMAGE: High Peaks in Autumn</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506559928-472350308.txt.wav.mp3">Description of IMAGE: High Peaks in Autumn</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Balconies </h3>
+                                            <a name="5460"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>Larry Ulrich</p><br><p>IMAGE DESCRIPTION:&nbsp;</p><p>This landscape photo shows the dramatic contrast between rocky Balconies Cliffs and the green grasses, shrubs, and trees of the surrounding hillsides. The cliffs form five levels of rock, each one rising a little higher and a little further beyond the one before.
+</p><p><br></p><br>                                                <div>
+                                                    <audio id="audio-5460" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5460" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887591-1694876276.txt.wav.mp3" >IMAGE: Balconies</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560279-1521257550.txt.wav.mp3">Description of IMAGE: Balconies</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Talus boulders </h3>
+                                            <a name="5461"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;</p><p>National Park Service / Yongqiang Li</p><br><p>DESCRIPTION:</p><p>A jumble of large, rounded boulders fills the photo. The boulders are wedged together in such a way that only a few small pockets of sunlight are visible between them.
+</p>
+<p><br></p>                                                <div>
+                                                    <audio id="audio-5461" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5461" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887592-57164489.txt.wav.mp3" >IMAGE: Talus boulders</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560313-707193095.txt.wav.mp3">Description of IMAGE: Talus boulders</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE:  California buckwheat set against Machete Ridge in winter </h3>
+                                            <a name="5471"></a>
+
+                                                                                                                                            <p>CREDIT:</p><p>Paul G. Johnson</p><br><p>DESCRIPTION:</p><p>The thin rocky blade of Machete Ridge, lit by the sun, fills the background of the image, while dried flower stalks of California buckwheat appear in shadow in the foreground. The ridge has a fairly smooth surface and rises jaggedly to form a sharp triangle at the top. The buckwheat flowers are small round clusters that have dried to a rusty red.
+</p><p><br></p>                                                <div>
+                                                    <audio id="audio-5471" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5471" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887592-944526948.txt.wav.mp3" >IMAGE:  California buckwheat set against Machete Ridge in winter</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560426-1255797138.txt.wav.mp3">Description of IMAGE:  California buckwheat set against Machete Ridge in winter</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE:  Indian warrior and manzanita </h3>
+                                            <a name="5472"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>Larry Ulrich</p><br><p>DESCRIPTION:&nbsp;</p><p>Several Indian warrior plants are shown in bloom with bright red clusters of tube-shaped flowers and green fern-like leaves. Behind the flowers, the trunk of a manzanita shrub is visible, covered in pinkish bark and pale green lichen.
+</p><p><br></p>                                                <div>
+                                                    <audio id="audio-5472" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5472" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887592-939369992.txt.wav.mp3" >IMAGE:  Indian warrior and manzanita</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560516-1034365749.txt.wav.mp3">Description of IMAGE:  Indian warrior and manzanita</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="5473">TEXT: Critical Habitat for California Critters</h2>
+                      <a name="5473"></a>
+
+                      
+                                                                                            <p>Varied topography and weather,
+as well as the National Park System,
+help protect Pinnacles’ many
+ habitats for plant and animal 
+species. Chaparral (a plant community
+ characterized by a variety
+of evergreen drought-resistant
+ shrubs) and other vegetation
+ provide shelter and food for
+birds, mammals, reptiles, and insects.
+ &nbsp;With 400 species of bees, 
+the park protects the largest 
+diversity of bees in a single place 
+in North America.</p>                                    <div>
+                                                                        <audio id="audio-5473" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5473" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887592-239753347.txt.wav.mp3" >TEXT: Critical Habitat for California Critters</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502900863-746780351.txt.wav.mp3">Description of TEXT: Critical Habitat for California Critters</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Bat </h3>
+                                            <a name="5474"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;</p><p>J. Scott Altenbach</p><br><p>DESCRIPTION:</p><p>A Townsend’s big-eared bat is shown in mid-flight against a black background. It has large oblong ears that are much bigger than its face. Its body is covered by light brown fur. Its wings are outstretched, and the bones of its “fingers” are visible along the dark wing membrane. Its tail membrane extends a short ways beyond its legs.
+</p><p><br></p><p>ASSOCIATED TEXT:<br></p><p>Several bat species find refuge in
+ Pinnacles’ caves, cliffs, and trees. 
+Balconies Cave attracts solitary males that roost in tiny cracks,
+ away from human disturbance. 
+Bear Gulch Cave hosts a maternal 
+colony of Townsend’s big-eared 
+bats (above), unusual because 
+they stay in the park year-round.
+ They breed and raise pups in
+spring and summer and hibernate 
+in winter.<br><br></p>                                                <div>
+                                                    <audio id="audio-5474" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5474" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887593-607285227.txt.wav.mp3" >IMAGE: Bat</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560616-649545467.txt.wav.mp3">Description of IMAGE: Bat</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: California red-legged frog </h3>
+                                            <a name="5475"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;</p><p>Dan Suzio<br></p><br><p>DESCRIPTION:&nbsp;</p><p>The red-legged frog is set against a blue background. Its skin is wet and slightly bumpy. Its back legs are folded behind it, ending in webbed feet. It is light brown with darker brown stripes along its legs. There is another stripe running from its nose down the side of its body toward its feet. It has large, protruding eyes.
+</p>
+<p>ASSOCIATED TEXT:<br></p><p>The California red-legged frog (below) is the largest native frog in the western United States.Once an endangered species, it is re-establishing here. You may see this nocturnal frog around Bear Gulch Reservoir.</p><br><br>                                                <div>
+                                                    <audio id="audio-5475" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5475" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887593-790434990.txt.wav.mp3" >IMAGE: California red-legged frog</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560687-1569136029.txt.wav.mp3">Description of IMAGE: California red-legged frog</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE:  California Condor </h3>
+                                            <a name="5476"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;</p><p>Steven Metildi</p><br><p>DESCRIPTION:&nbsp;</p><p>This image shows the underside of a California condor soaring with wings outstretched against the sky. The long feathers at the end of its wings are spaced far apart like fingers spread wide. Its head is pink and bald, lacking the feather covering that most birds have. There are patches of white under the wings along the whole length of the bird’s enormous wingspan, but the rest of the bird is black. The text in the top right corner of the image says, “Critical Habitat for California Critters.”
+</p><p><br></p><p>ASSOCIATED TEXT:</p><p>Stewardship in Action </p><p>Pinnacles National Park is a nesting area for the California condor and is one of a few release sites in the United States and Mexico. Loss of habitat, shootings, and poisoning from lead bullets—in gut piles or lodged in animal carcasses that the bird feeds on—led to its listing as an endangered species in 1967. An aggressive captive breeding program in the 1980s and ‘90s increased its chances for survival. One of the largest birds in North America, the condor weighs about 20 pounds and has a wingspan of 9½ feet. It soars on thermal updrafts at speeds of 55 miles per hour and altitudes of 15,000 feet. You may see condors flying over the high peaks at Pinnacles.</p>                                                <div>
+                                                    <audio id="audio-5476" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5476" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887593-2118603149.txt.wav.mp3" >IMAGE:  California Condor</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560722-1452636206.txt.wav.mp3">Description of IMAGE:  California Condor</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Poppies </h3>
+                                            <a name="6169"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;</p><p>WILLIAM R. HEWLETT, © CALIF. ACADEMY OF SCIENCES</p><br><p>DESCRIPTION:&nbsp;</p><p>This is a close-up photo of bright orange California poppies. Each of the dozen or so poppies has four delicately thin petals overlapping into a cup shape.
+</p>
+<p><br></p>                                                <div>
+                                                    <audio id="audio-6169" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-6169" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887593-154928553.txt.wav.mp3" >IMAGE: Poppies</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560751-1211084855.txt.wav.mp3">Description of IMAGE: Poppies</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="5494">TEXT:  Faults, Volcanoes, and Erosion</h2>
+                      <a name="5494"></a>
+
+                      
+                                                                                            <p>The Earth’s crust consists of plates that fit together like pieces of a puzzle. These plates are always moving, some diving under others (subduction), others grinding past each other along fault zones.&nbsp;
+
+</p><p>Our Pinnacles story began millions of years ago when the central part of the Farallon plate subducted under the southwestern part of the North American plate, creating California’s Coast Range and spawning volcanic activity. After the central Farallon plate’s subduction, the Pacific plate collided with and wrenched off a chunk of the North American plate, creating the San Andreas Fault Zone. Molten rock poured through fissures that opened as plates ground against each other.&nbsp;
+
+</p><p>The Pinnacles volcanic field—believed to be 15 miles long and 8,000 feet high—was born 23 million years ago. The volcanoes were not where the Pinnacles are now but 195 miles to the southeast (see Neenach Formation on map below). How did these fantastic rocks get here? As the Pacific plate crept north, it split the volcanic field and carried two-thirds of the Pinnacles’ volcanics with it, leaving behind the Neenach Formation. On the Pinnacles’ slow journey, the mass sank beneath the surface. In time, the power of wind, rain, and ice exposed the old volcanic field, eroded the rubble, and the Pinnacles formation was born.
+</p>                                    <div>
+                                                                        <audio id="audio-5494" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5494" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887593-656467052.txt.wav.mp3" >TEXT:  Faults, Volcanoes, and Erosion</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502923087-1341627790.txt.wav.mp3">Description of TEXT:  Faults, Volcanoes, and Erosion</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE:  San Andreas Fault </h3>
+                                            <a name="5495"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>National Park Service</p><br><p>DESCRIPTION:&nbsp;</p><p>This graphic shows a relief map of the western United States. The San Andreas Fault is shown dividing California. An arrow on the right side of the fault indicates that the North American Plate is moving west, while an arrow on the left side of the fault indicates that the Pacific Plate is moving north. Pinnacles National Park is immediately left of the fault, which means it is traveling north with the Pacific plate. A small inset graphic shows a globe with the Pacific Ocean and surrounding continents visible. The Ring of Fire, a string of volcanoes and earthquake sites that surround the Pacific Ocean, is marked on the map with yellow lines.
+</p>
+
+<p>ASSOCIATED TEXT:<br></p><p>Volcanoes</p><p>Fault zones are likely places for volcanoes to occur. Here the Earth’s crust is broken, allowing magma to ooze up from below the surface or gases and ash to suddenly erupt as pressure is released. Many land volcanoes are found near plate boundaries. But most volcanism—about three-quarters of all lava eruptions on Earth—takes place beneath the ocean.</p><p>Faults</p><p>
+The San Andreas Fault Zone slices through 600 miles of California. Along it the Pacific and North American plates crunch past each other—one headed north, the other west. The offshore Mendocino fracture zone (above) is the northernmost extent of the San Andreas fault sys­­­­tem. The fault is part of the Ring of Fire (right), a zone of earthquake and volcanic activity partly encircling the Pacific Ocean.
+</p><p>Erosion
+</p><p>Erosion from weather, water, and wind is responsible for the spires and towers you see at Pinnacles today. Water—the most powerful force—erodes by seeping into cracks, freezing, expanding, and prying off flakes and chips of the brittle rock. Where the rock is weak, erosion works more quickly; stronger rock resists these forces. Over millions 
+of years, these changes scoured nearly a mile of rock from the volcanoes, resulting in the distinctive rocks seen throughout the park. 
+<br><br><br><br><br></p>                                                <div>
+                                                    <audio id="audio-5495" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5495" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887593-181631035.txt.wav.mp3" >IMAGE:  San Andreas Fault</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560845-330157862.txt.wav.mp3">Description of IMAGE:  San Andreas Fault</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="5496">TEXT:  Grassroots Movement: The People&#039;s Park</h2>
+                      <a name="5496"></a>
+
+                      
+                                                                                            <p>People have lived nearby for hundreds of years, but we still know little about them. Chalon and Mutsun Indians were hunter-gatherers who seasonally harvested the area’s resources. In the 1700s Spanish missionaries introduced a new religion and lifestyle but unwittingly brought diseases that almost decimated Pinnacles’ Native Americans.</p><p>Emigrants arrived next. Pinnacles soon became a destination for picnics, festivities, camping, and exploration.&nbsp;</p><p>Homesteader Schuyler Hain, who led tours of the caves for years, began a grassroots preservation campaign. Stanford University president David Starr Jordan, US Forest Service chief Gifford Pinchot, and local families joined in. Their efforts paid off in 1908 when President Theo­dore Roose­velt proclaimed these geological formations a national monument. In the 1930s the Civilian Conservation Corps (CCC) built trails, tunnels, and the Bear Gulch Dam and day use area. Today’s visitors join a long tradition of treasuring and preserving this beautiful national park.</p>                                    <div>
+                                                                        <audio id="audio-5496" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5496" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887594-191252338.txt.wav.mp3" >TEXT:  Grassroots Movement: The People&#039;s Park</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502924381-1288490939.txt.wav.mp3">Description of TEXT:  Grassroots Movement: The People&#039;s Park</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Woman in cave </h3>
+                                            <a name="5497"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>National Park Service</p><br><p>DESCRIPTION:&nbsp;</p><p>A black and white photo shows a smiling woman in a skirt and blouse crouching beneath the giant boulders of a talus cave.
+</p><p><br></p>                                                <div>
+                                                    <audio id="audio-5497" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5497" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887594-1868842357.txt.wav.mp3" >IMAGE: Woman in cave</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560863-887424395.txt.wav.mp3">Description of IMAGE: Woman in cave</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Man and geological formation </h3>
+                                            <a name="5498"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>National Park Service</p><br><p>DESCRIPTION:&nbsp;</p><p>This is a historic black and white image of the Pinnacles landscape. A large rock spire rises in the background, towering above the surrounding trees and shrubs. In the foreground of the picture, a bearded man in black pants and a white shirt holds a walking stick and looks up at the rocks. He is dwarfed by the scale of the rocks around him.
+</p><p><br></p>                                                <div>
+                                                    <audio id="audio-5498" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5498" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887594-2049867402.txt.wav.mp3" >IMAGE: Man and geological formation</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506560967-1630500159.txt.wav.mp3">Description of IMAGE: Man and geological formation</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="5462">OVERVIEW: Back side of brochure</h2>
+                      <a name="5462"></a>
+
+                      
+                                                                                            <p>Provide a brief (50-100 words) overview of the major sections/features of the back side of the brochure. See "component notes" section below for further guidance and examples.</p>                                    <div>
+                                                                        <audio id="audio-5462" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5462" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887595-125236835.txt.wav.mp3" >OVERVIEW: Back side of brochure</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502898133-1992163421.txt.wav.mp3">Description of OVERVIEW: Back side of brochure</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                              
+                      <h2 id="5463">TEXT AND IMAGES: Fantastic Flowers</h2>
+                      <a name="5463"></a>
+
+                      
+                                                                                            <p>Pinnacles’ Mediterranean climate—hot, dry summers, cool winters, and moderate rainfall—influences the park’s plants and trees. Chaparral, with its dense, woody evergreen shrubs, dominates the landscape.Woodlands offer blue oak and gray pine. Riparian areas flaunt ferns and mosses. Meadows sprout native and exotic grasses. Cliffs support multicolored lichens. And every spring a miracle seems to happen. Wildflowers—over 100 species—burst into bloom, dazzling the eye with color.</p><p>CAPTION:&nbsp;<br></p><p>Larkspur</p><p>California Buckeye</p><p>Elegant clarkia</p><p>California Buckwheat</p><p>Mariposa lily</p><p>Bush poppy</p><p>Gray mule-ears</p><p>Sticky monkeyflower</p><br><p>CREDIT:&nbsp;</p><p>National Park Service</p><br><p>DESCRIPTION:&nbsp;</p><p>These six small images show a variety of the colorful wildflowers that can be found at Pinnacles in the spring. The purple larkspur has several blossoms with elongated petals at the top of the stem. The California buckeye has a cluster of white flowers with stringy filaments topped with pollen protruding from them. The flowers at the end of the cluster have not yet opened. The elegant clarkia is bright pink with four spade-shaped petals coming out of the center of the flower. The California buckwheat has tiny, tightly-clustered flowers that have each have five pink and white petals. A single mariposa lily has three delicate petals that are mostly white with deep pink spots in the middle. The two bush poppies are yellow, each with four round petals. Gray mule-ears are also yellow with many petals and fuzzy gold pollen in the center and large, gray-green leaves. The sticky monkeyflower is pale orange and oddly-shaped with five fused petals of different sizes.
+</p>
+<p><br><br><br><br></p>                                    <div>
+                                                                        <audio id="audio-5463" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5463" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887595-339113348.txt.wav.mp3" >TEXT AND IMAGES: Fantastic Flowers</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1506561322-219489163.txt.wav.mp3">Description of TEXT AND IMAGES: Fantastic Flowers</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                              
+                      <h2 id="5464">TEXT: Excellent Exploration</h2>
+                      <a name="5464"></a>
+
+                      
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT: Hiking </h3>
+                                            <a name="5465"></a>
+
+                                                                                                                                            <p>Pinnacles National Park has over 30 miles of trails, ranging from easy to strenuous. Many trails intersect, and you can plan a short loop or a longer all-day trip. Trails are self-guiding. Popular destinations are Bear Gulch Reser­voir, High Peaks, and the Balconies area (see detail map and trail chart at right).&nbsp;</p>                                                <div>
+                                                    <audio id="audio-5465" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5465" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887596-1194842797.txt.wav.mp3" >TEXT: Hiking</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1502958457-143355000.txt.wav.mp3">Description of TEXT: Hiking</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT: Exploring the Two Caves </h3>
+                                            <a name="5466"></a>
+
+                                                                                                                                            <p>Balconies and Bear Gulch caves are talus caves created when boulders formed a roof over a narrow can­yon. Some cave areas are narrow and twisting, with low ceilings and uneven footing. Passing through may require scrambling over rocks and wading through water. The caves are dark; use a flashlight. Caves may be closed by flooding. Portions of Bear Gulch Cave are closed seasonally to protect sensitive bat species. Contact the park or check our website for the status of caves.&nbsp;</p>                                                <div>
+                                                    <audio id="audio-5466" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5466" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887596-1846804431.txt.wav.mp3" >TEXT: Exploring the Two Caves</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1502958506-100326793.txt.wav.mp3">Description of TEXT: Exploring the Two Caves</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT:  When to visit </h3>
+                                            <a name="5467"></a>
+
+                                                                                                                                            <p>The park is open year-round, 24 hours a day. The busiest times are mid-February to early June, when the weather is comfortable and the wildflowers glorious. Weekends during those months are especially crowded, and you may need to park in one of the overflow lots.&nbsp;
+
+</p><p>If you enjoy solitude, exploring peaceful trails, or discovering wildlife, why not try something different? Visit on a weekday or off-season. Bring a picnic dinner. Hike along Chalone Creek in the moonlight. Stroll along Old Pinnacles Trail when it is raining. Watch for condors soaring on warm updrafts, woodpeckers burying acorns in the bark of gray pines, or bobcats trotting along the road.</p><p>
+
+Would you like to learn firsthand about bats? How about seeing the Milky Way in a sky un­polluted by city lights? Ranger-led programs are available seasonally, as staffing allows (reservations may be required). Some activities are available year-round. Read park bulletin boards or contact the park about schedules.</p>                                                <div>
+                                                    <audio id="audio-5467" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5467" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887596-2062354672.txt.wav.mp3" >TEXT:  When to visit</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1502958604-1334613736.txt.wav.mp3">Description of TEXT:  When to visit</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT:  Our birds and bats </h3>
+                                            <a name="5507"></a>
+
+                                                                                                                                            <p>Raptors (birds of prey), cliff-dwelling birds, and bats rear young in many rock formations. Please do not enter or climb in these areas during critical breeding seasons. For restrictions contact the park, ask a ranger, or check our website.</p>                                                <div>
+                                                    <audio id="audio-5507" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5507" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-1980477320.txt.wav.mp3" >TEXT:  Our birds and bats</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1502958681-1648627001.txt.wav.mp3">Description of TEXT:  Our birds and bats</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="5508">TEXT:  A Wilderness Wonder</h2>
+                      <a name="5508"></a>
+
+                      
+                                                                                            <p>Congress has protected nearly 16,000 acres of Pinnacles National Park as wilderness under the 1964 Wilderness Act. Wilderness is meant to protect forever the land’s natural conditions, opportunities for solitude and primitive recreation, and scientific, educational, and historical values. In wilderness, people can sense being a part of the whole community of life on Earth. Preserving wilderness shows restraint and humility and benefits the generations that follow us. Visit www.wilderness.net.
+
+</p><p>Pinnacles National Park is one of over 400 parks in the National Park System. To learn more about parks and National Park Service programs in America’s communities visit www.nps.gov.</p>                                    <div>
+                                                                        <audio id="audio-5508" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5508" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-580957781.txt.wav.mp3" >TEXT:  A Wilderness Wonder</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502958742-1643763702.txt.wav.mp3">Description of TEXT:  A Wilderness Wonder</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                              
+                      <h2 id="5509">TEXT: Try Out a Trail</h2>
+                      <a name="5509"></a>
+
+                      
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT: East Side Trails </h3>
+                                            <a name="5510"></a>
+
+                                            
+                                                                                                                                                                                                                                                <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT: Pinnacles Visitor Center to Bear Gulch day use area</h4> 
+                                                        <a name="5511"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>2.3 miles one way, 1½ hours, elevation gain: 300 feet</p><p>
+Moderate
+</p><p>Walk along Chalone and Bear creeks from the Pinnacles Visitor Center to the Bear Gulch day use area. Portions of the Bench Trail are accessible to visitors in wheelchairs.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5511" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887598-1811182077.txt.wav.mp3" >TEXT: Pinnacles Visitor Center to Bear Gulch day use area</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT: Pinnacles Visitor Center to Bear Gulch day use area</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  South Wilderness Trail</h4> 
+                                                        <a name="5512"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>6.5 miles round trip, 3 to 4 hours, no elevation gain</p><p>
+Moderate
+</p><p>Follow this unmaintained trail to the park boundary, or simply meander through the magnificent grove of valley oaks. Begin at the campground and follow the Bench Trail to the South Wilderness marker. (See large map at lower left.)
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5512" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887598-389256867.txt.wav.mp3" >TEXT:  South Wilderness Trail</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT:  South Wilderness Trail</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Pinnacles Visitor Center to Balconies Cave</h4> 
+                                                        <a name="5513"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>9.4 miles round trip, 3 to 4 hours, elevation gain: 300 feet</p><p>
+Moderate
+</p><p>Hike along sunny Chalone Creek on the Bench and Old Pinnacles trails to Balconies Cave. On the return trip, cross over the cave via the Balconies Cliffs for views of formations. Flashlight required in cave.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5513" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887598-1683272384.txt.wav.mp3" >TEXT:  Pinnacles Visitor Center to Balconies Cave</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT:  Pinnacles Visitor Center to Balconies Cave</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Moses Spring&ndash;Rim Trail Loop</h4> 
+                                                        <a name="5514"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>Moses Spring–Rim Trail Loop 2.2-mile loop, 1½ hours, elevation gain: 500 feet
+</p><p>Moderate</p><p>
+This loop is a good choice for rock formations, talus caves, and the reservoir on a short hike and also a good choice for children. Bear Gulch Cave is open seasonally. Flashlight required in cave.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5514" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887598-763085451.txt.wav.mp3" >TEXT:  Moses Spring&ndash;Rim Trail Loop</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT:  Moses Spring&ndash;Rim Trail Loop</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Condor Gulch&ndash;High Peaks Loop</h4> 
+                                                        <a name="5515"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>5.3-mile loop, 3 to 5 hours, elevation gain: 1,300 feet</p><p>
+Strenuous</p><p>
+Walk through the heart of the Pinnacles rock formations, particularly along the Steep and Narrow section of the High Peaks Trail. Add the Rim and Moses Spring trails to extend the loop to 6.1 miles.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5515" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887598-1752676844.txt.wav.mp3" >TEXT:  Condor Gulch&ndash;High Peaks Loop</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT:  Condor Gulch&ndash;High Peaks Loop</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Chalone Peak Trail</h4> 
+                                                        <a name="5516"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>9 miles round trip, 3 to 5 hours, elevation gain: 2,040 feet</p><p>
+Strenuous</p><p>
+Climb to the highest point in the park, North Chalone Peak, and be rewarded with views of the surrounding valleys. Continue on an unmaintained trail to South Chalone Peak for a longer hike. (See large map at lower left.)
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5516" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-1486115004.txt.wav.mp3" >TEXT:  Chalone Peak Trail</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT:  Chalone Peak Trail</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Old Pinnacles Trail to Balconies Cave</h4> 
+                                                        <a name="5517"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>5.3 miles round trip, 4 to 5 hours, no elevation gain
+</p><p>Moderate</p><p>
+This sunny hike to Balconies Cave also leads to the towering rock formations of Machete Ridge and the Balconies Cliffs. Begin at the Old Pinnacles Trailhead. Flashlight required in cave. 
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5517" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5510" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-10718751.txt.wav.mp3" >TEXT:  Old Pinnacles Trail to Balconies Cave</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887597-310820098.txt.wav.mp3">Description of TEXT:  Old Pinnacles Trail to Balconies Cave</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                                                                                                                    <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT:  West Side Trails </h3>
+                                            <a name="5518"></a>
+
+                                            
+                                                                                                                                                                                                                                                <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Juniper Canyon Loop</h4> 
+                                                        <a name="5521"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>4.3-mile loop, 2 to 3 hours, elevation gain: 1,215 feet</p><p>
+Strenuous</p><p>
+This steep trail climbs along switchbacks to the heart of the High Peaks. At the top, circle through the rock formations along the Steep and Narrow section of the High Peaks Trail and the Tunnel Trail.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5521" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5518" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-746754548.txt.wav.mp3" >TEXT:  Juniper Canyon Loop</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-2033990401.txt.wav.mp3">Description of TEXT:  Juniper Canyon Loop</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Balconies Cliffs&ndash;Balconies Cave Loop</h4> 
+                                                        <a name="5520"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>
+2.4-mile loop, 1 to 1½ hours, elevation gain: 100 feet
+</p><p>Easy to Moderate
+</p><p>This trail through Balconies Cave may require a bit of scrambling through talus passages. Wading may be required in winter. Flashlight required in cave. 
+
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5520" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5518" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-1920492770.txt.wav.mp3" >TEXT:  Balconies Cliffs&ndash;Balconies Cave Loop</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-2033990401.txt.wav.mp3">Description of TEXT:  Balconies Cliffs&ndash;Balconies Cave Loop</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  North Wilderness Trail Loop</h4> 
+                                                        <a name="5519"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>9.3-mile loop, 5 to 8 hours, elevation gain: 1,020 feet
+</p><p>Strenuous</p><p>
+This unmaintained trail climbs along ridgetops and then descends into the Chalone Creek bed, where it is marked by rock cairns. Return along the Old Pinnacles and Balconies trails.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5519" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5518" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-1803103945.txt.wav.mp3" >TEXT:  North Wilderness Trail Loop</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-2033990401.txt.wav.mp3">Description of TEXT:  North Wilderness Trail Loop</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  High Peaks&ndash;Balconies Cave Loop</h4> 
+                                                        <a name="5522"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>8.4-mile loop, 4 to 5 hours, elevation gain: 1,540 feet
+</p><p>Strenuous</p><p>
+Begin by climbing into the High Peaks, and the rest of the loop is downhill or flat. Return along the Old Pinnacles and Balconies trails, going over or through the cave. Flashlight required in cave.
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5522" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5518" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-1350768751.txt.wav.mp3" >TEXT:  High Peaks&ndash;Balconies Cave Loop</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887599-2033990401.txt.wav.mp3">Description of TEXT:  High Peaks&ndash;Balconies Cave Loop</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                                                                                                                    <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> IMAGE: Bear Gulch Cave </h3>
+                                            <a name="5534"></a>
+
+                                                                                                                                            <p>CREDIT:&nbsp;<br></p><p>John Dittli</p><br><p>DESCRIPTION:&nbsp;</p><p>A woman dressed for hiking in boots, shorts and shirt, stands on a rocky but level trail in Bear Gulch Cave. She is illuminated by soft sunlight that filters down through the boulders from above. Giant boulders form the cave walls and ceiling, each much larger than the woman. A light layer of green moss covers most of the boulders.
+</p>
+<p><br></p>                                                <div>
+                                                    <audio id="audio-5534" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-5534" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-1507098220.txt.wav.mp3" >IMAGE: Bear Gulch Cave</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1506561436-635670102.txt.wav.mp3">Description of IMAGE: Bear Gulch Cave</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> MAPS:  Pinnacles National Park </h3>
+                                            <a name="5523"></a>
+
+                                            
+                                                                                                                                                                                                                                                <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>MAP:  Area Map</h4> 
+                                                        <a name="5524"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>CREDIT:</p><p>National Park Service</p><br><p>DESCRIPTION:</p><p>This is an area map of central California that shows the location of Pinnacles National Park in relation to major cities and highways. It covers an area of roughly 150 square miles. It is oriented with north at the top. San Francisco is shown in the top left corner of the map, and Coalinga is shown in the bottom right corner. Pinnacles National Park is indicated in the southeast quadrant of the map. The scale of the map is shown on the bottom.</p><br><p>ASSOCIATED TEXT:</p><p>Getting to the park Pinnacles National Park is
+in central California, about 50 miles inland from
+the Pacific Ocean and 140 miles south of the San
+Francisco Bay area. WARNING: CA 146 does NOT
+go through the park. To get from one entrance to
+the other (east or west) you must drive around the
+park; allow about two hours driving time.</p></div>
+                                                            <div>
+                                                                <audio id="audio-5524" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5523" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-93928594.txt.wav.mp3" >MAP:  Area Map</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-1600110142.txt.wav.mp3">Description of MAP:  Area Map</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>MAP:  Park Map</h4> 
+                                                        <a name="5525"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>CREDIT:</p><p>National Park Service</p><br><p>DESCRIPTION:</p><p>Short Description:
+</p><p>This is a large map showing the entirety of Pinnacles National Park. Its primary purpose is for information and wayfinding, though it also indicates the topography of the area. The map is oriented with north at the top and covers an area of roughly ten square miles. The roads and trails are indicated on the map, and the visitor centers are marked along Highway 146 at the eastern and western edges of the map. The road enters the park on both sides but does not connect in the middle.
+</p>
+<p>Legend:
+</p><p>The legend has symbols for amenities and wayfinding. Amenities symbols include a. ranger station (symbol building with flag), b. picnic area (symbol picnic table), c. campground (symbol tent), d. wheelchair-accessible (symbol universal wheelchair), e. restrooms (symbol universal man and woman), f. drinking water (symbol white drinking glass). Wayfinding symbols include a. maintained trail (symbol black dashed line), b. unmaintained trail (symbol gray dashed line), c. trail through cave (symbol black dotted line), d. trail distance indicator (symbol black text with miles and kilometers).
+</p>
+<p>Amenities:
+</p><p>Amenities will listed by location, starting at the West Visitor Contact Station on the left and going clockwise. Compass points indicate position on the map.
+</p>
+<p>West Visitor Contact Station (located west): ranger station, restrooms, drinking water, wheelchair-accessible
+</p><p>East Entrance Station (located east): ranger station
+</p>
+<p>Pinnacles Visitor Center (located east): picnic area
+</p>
+<p>Pinnacles Campground (located east): campground, restrooms, drinking water, wheelchair-accessible
+</p>
+<p>Peaks View (located east): picnic area, restrooms, drinking water
+</p>
+<p>Roadways and Trails
+</p><p>The primary road on the map is Highway 146, shown entering the park on the east and west sides but does not connect. 146 enters the park by the West Visitor Contact Station and ends at the Chaparral parking area on the west side. On the east side, it goes past the Pinnacles Visitor Center and Peaks View before splitting about three and a half miles into the park. The right fork ends at the Old Pinnacles parking area, and the left fork ends at Bear Gulch. From Soledad, it is 12 miles or 19 kilometers to the Chaparral Trailhead Parking on the west side. Highway 25 is shown on the east side of the map, connecting to 146 at the east entrance. From Hollister, it is 30 miles or 48 kilometers to the east entrance of the park. La Gloria Road, an unpaved road, is shown connecting to 25 just north of the park.
+</p>
+<p>There are numerous trails listed on the map. The Balconies Cave, North Wilderness, and Juniper Canyon Trails begin at the Chaparral Trailhead. The Bear Gulch Cave, Chalone Peak, and High Peaks Trails begin at Bear Gulch. The Old Pinnacles Trail begins at the Old Pinnacles Trailhead. The South Wilderness Trail begins near Peaks View. The Bench Trail begins at the Pinnacles Campground.
+</p>
+<p>ASSOCIATED TEXT:<br></p><p>Most of California 146 is winding and one and a half lanes wide (in some places only one lane wide) and NOT recommended for RVs, large vehicles, or trailers. &nbsp;</p><p>Driver's Note:&nbsp;</p><p>California 146 is not a through road. &nbsp;No roads cross the park.</p></div>
+                                                            <div>
+                                                                <audio id="audio-5525" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5523" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-818118489.txt.wav.mp3" >MAP:  Park Map</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-1600110142.txt.wav.mp3">Description of MAP:  Park Map</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>MAP: Detail Map</h4> 
+                                                        <a name="5526"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>CREDIT:
+</p>
+National Park Service<p><br></p><p>DESCRIPTION:
+</p><p>This is a detail map of the center of the park. Its primary purpose is wayfinding. It is oriented with north at the top and covers an area of roughly three square miles. Highway 146 is shown where it ends at the Chaparral parking area on the west and the Old Pinnacles and Bear Gulch parking areas on the east.
+</p>
+<p>Amenities
+</p><p>Amenities will be listed by location, starting at the Chaparral Trailhead Parking on the west and going clockwise. Compass points indicate position on the map.
+</p>
+<p>Chaparral Trailhead Parking (located west): picnic area, wheelchair-accessible, restrooms, drinking water
+</p>
+<p>Bear Gulch (located southeast): ranger station, picnic area, wheelchair-accessible, restrooms, drinking water
+</p>
+<p>Moses Spring Trailhead (located southeast): restrooms, drinking water
+</p>
+<p>Scout Peak (locate southwest): restrooms
+</p>
+<p>Trails
+</p><p>Numerous trails are indicated on the map and are listed by starting location. 
+</p>
+<p>Chaparral Trailhead Parking: Balconies Trail to the Balconies Cliffs and Balconies Cave, North Wilderness Trail, and Juniper Canyon Trail to the High Peaks.
+</p>
+<p>Old Pinnacles Trailhead Parking: Old Pinnacles Trail to the Balconies Cliffs, Balconies Cave, and North Wilderness Trail.
+</p>
+<p>Bear Gulch: Condor Gulch Trail to the High Peaks, Moses Spring Trail to Bear Gulch Cave and Bear Gulch Reservoir, and Rim Trail.
+</p><br><p></p></div>
+                                                            <div>
+                                                                <audio id="audio-5526" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5523" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1333080000.txt.wav.mp3" >MAP: Detail Map</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887600-1600110142.txt.wav.mp3">Description of MAP: Detail Map</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                                                                                                                    <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> TEXT:  What You Need to Know </h3>
+                                            <a name="5527"></a>
+
+                                            
+                                                                                                                                                                                                                                                <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  East Entrance</h4> 
+                                                        <a name="5528"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>To the East Entrance
+</p><p>Take CA 25 to CA 146. Turn west on CA 146 into the park.&nbsp;
+
+</p><p>East Entrance–Pinnacles Visitor Center</p><p>
+The visitor center, at the entrance to the campground, has information, a small bookstore, and exhibits. Staff can help you plan your visit. The visitor center is open year-round 9:30 am to 5 pm. There are picnic tables, restrooms, water, a pay phone, and parking.
+
+</p><p>Pinnacles Campground</p><p>
+The only campground in the park is inside the eastern boundary. NOTE: Camping is prohibited on the west side and outside of this designated campground. The campground offers tent, RV, and group sites; showers; and a store. Call 831-389-4485 for general campground information. For reservations visit www.recreation.gov or call 877-444-6777.
+
+</p><p>Bear Gulch
+</p><p>Bear Gulch has picnicking, trailheads, park headquarters, and Bear Gulch Nature Center. The nature center is open seasonally, as staffing 
+permits. You can watch the park film, get a junior ranger book, and learn about the park’s natural and cultural history.</p></div>
+                                                            <div>
+                                                                <audio id="audio-5528" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5527" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1233413304.txt.wav.mp3" >TEXT:  East Entrance</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1513924157.txt.wav.mp3">Description of TEXT:  East Entrance</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  West Entrance</h4> 
+                                                        <a name="5529"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>To the West Entrance</p><p>Take US 101; at Soledad turn east onto CA 146 and follow signs to the park. WARNING: The road from Soledad to west Pinnacles is steep and narrow; RVs, trailers, and large vehicles should avoid this entrance.</p><p>West Entrance–Chaparral Trailhead</p><p>Visitor contact station, restrooms, water, parking at trailhead. No phone.&nbsp;</p><br><p>An automatic gate at the west entrance opens each morning at 7:30 am and closes at night. Visitors can leave the park after the gate is closed, but vehicles cannot enter when the gate is shut. This allows for late hiking and climbing.&nbsp;</p></div>
+                                                            <div>
+                                                                <audio id="audio-5529" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5527" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1105355899.txt.wav.mp3" >TEXT:  West Entrance</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1513924157.txt.wav.mp3">Description of TEXT:  West Entrance</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Loding, Food, and Gas</h4> 
+                                                        <a name="5530"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>These are not available in Pinnacles National Park, but they can be found in nearby towns. You are welcome to picnic in the park.</p></div>
+                                                            <div>
+                                                                <audio id="audio-5530" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5527" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1697779493.txt.wav.mp3" >TEXT:  Loding, Food, and Gas</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1513924157.txt.wav.mp3">Description of TEXT:  Loding, Food, and Gas</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Weather, Heat, and Water</h4> 
+                                                        <a name="5531"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>Daytime temperatures in summer and early autumn can reach above 100ºF. • Hiking steep trails requires energy and results in greater water loss through sweating. • Wear a hat and clothing that provide ventilation and protection from the sun. • Drinking water is available only in developed areas; there is no water along any of the trails. • Carry and drink at least one liter of water per person per hour. • Heat and dehydration can be fatal.</p></div>
+                                                            <div>
+                                                                <audio id="audio-5531" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5527" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-859451397.txt.wav.mp3" >TEXT:  Weather, Heat, and Water</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1513924157.txt.wav.mp3">Description of TEXT:  Weather, Heat, and Water</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Pets</h4> 
+                                                        <a name="5532"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>Pets are not allowed on trails. They must be leashed while in parking lots and picnic areas and  must be attended at all times. Animals left in vehicles during the heat of the day can quickly die from heat exhaustion.
+
+</p></div>
+                                                            <div>
+                                                                <audio id="audio-5532" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5527" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887602-363743540.txt.wav.mp3" >TEXT:  Pets</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1513924157.txt.wav.mp3">Description of TEXT:  Pets</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                            <p style="margin-left: 20px; padding:12px 0; border-top:1px dotted #000;">
+                                                        <h4>TEXT:  Safety and Regulations</h4> 
+                                                        <a name="5533"></a>
+                                                                                                                    
+                                                            <div style="margin-left: 20px;"><p>Hiking, caving, and climbing can be fun, but remember—if you get injured, you are a long way from medical help. Cell phones may not work in this remote park. Don’t let your guard down when it comes to safety. Be prepared. Please follow these regulations and safety guidelines:</p><p>Carry and drink plenty of water • Wear shoes with ankle support and non-slip soles that provide good traction—especially in caves, where the rocks can be slippery. • Carry a proper flashlight for exploring caves. Small lights like penlights and cell phone lights will not guide you safely through a dark, rugged cave. • Watch where you step, sit, or place your hands. Poison oak, stinging nettles, and rattlesnakes are in the park.&nbsp;</p><p>Stay on established trails to help prevent erosion. • Green fences indicate restoration work; do not enter these areas. • Bicycles are not permitted on any trails. • Watch for pedestrians and wildlife on roads. • Feeding, approaching, or hunting wildlife is prohibited. • All plants, animals, rocks, and structures in the park are protected by federal law. This includes wildflowers, pine cones, and rocks. They are beautiful, but please leave them for the enjoyment of future visitors. • For firearms regulations, check the park website.</p><p>Emergencies contact a ranger or call 911</p></div>
+                                                            <div>
+                                                                <audio id="audio-5533" preload="auto" data-able-player> </audio>
+                                                                <!-- first playlist (embedded) -->
+                                                                <ul class="able-playlist" data-player="audio-5527" data-embedded>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887602-2060811158.txt.wav.mp3" >TEXT:  Safety and Regulations</li>
+                                                                  <li data-mp3="https://api.montanab.com/tts/tmp/1508887601-1513924157.txt.wav.mp3">Description of TEXT:  Safety and Regulations</li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="#toc">&uarr; back to top</a>
+
+                                                        
+                                                                                                            </p>
+                                                                                                                                                                                                                                                                                                                  
+                      <h2 id="5468">OVERVIEW: Accessibility</h2>
+                      <a name="5468"></a>
+
+                      
+                                                                                            <p>We strive to make our facilities, services, and programs accessible to all. For information go to a visitor center, ask a ranger, call, or check our website.<br></p><br><p>[Include here the general accessibility philosophy of the park (what's your park's commitment level to accessibility?) as well as highlights of accessibility features and resources that might be of special interest or concern to a blind or low-vision population. See "component notes" below for further guidance.]</p>                                    <div>
+                                                                        <audio id="audio-5468" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5468" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887602-1650950379.txt.wav.mp3" >OVERVIEW: Accessibility</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502980304-259197384.txt.wav.mp3">Description of OVERVIEW: Accessibility</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                              
+                      <h2 id="5469">OVERVIEW: More information</h2>
+                      <a name="5469"></a>
+
+                      
+                                                                                            <p>Plan ahead. Contact the park and check our website for ideas about planning your trip, safety tips and regulations, ranger-led activities, and cave status.&nbsp;</p><br><p>Address: &nbsp;</p><p>Pinnacles National Park&nbsp;</p><p>
+5000 Hwy. 146</p><p>
+Paicines, CA 95043-9770</p><br><p>Phone number: &nbsp;</p><p>831-389-4485</p><br><p>Website: &nbsp;
+
+
+</p><p>www.nps.gov/pinn
+</p><br><p>Additional links:</p><p>National Park Foundation
+</p><p>Join the park community.</p><p>
+www.nationalparks.org
+</p>                                    <div>
+                                                                        <audio id="audio-5469" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-5469" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1508887602-561597416.txt.wav.mp3" >OVERVIEW: More information</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1502980495-908257684.txt.wav.mp3">Description of OVERVIEW: More information</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                    
+        </main>
+
+<script type="text/javascript">
+// Select all links with hashes
+$(document).ready(function() {
+console.log('in docready');
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    event.stopPropagation();
+console.log('inside clicky');
+    {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+});
+</script>
+
+        
 	</body>
 </html>
