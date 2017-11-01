@@ -1,18 +1,619 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
-		<title>{project.title}</title>
-		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
-		
-		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
-		
-		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
-		
+		<meta charset="utf-8">
+		<title>Sitka National Historical Park</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="brett.oppegaard@gmail.com">
+	    
+	     <!-- phonegap -->
+	    <!--<script type="text/javascript" src="phonegap.js"></script>-->
+	    
+	    <!-- Bootstrap -->
+	    <!--<link rel="stylesheet" href="https://www.unidescription.org/css/nps-bootstrap.css">-->
+	    
+	    <!-- Custom Fonts -->
+	    <!--<link href="https://www.unidescription.org/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+	
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	    
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script type="text/javascript" src="https://www.unidescription.org/js/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <!--<script type="text/javascript" src="https://www.unidescription.org/js/nps-bootstrap.min.js"></script>-->
+        <!--<script type="text/javascript" src="https://www.unidescription.org/js/autosize.js"></script>-->
+        <!--<script type="text/javascript" src="https://www.unidescription.org/js/jquery-sortable.min.js"></script>-->
+
+	
+	    <!-- Unidescription custom JS -->
+	    <!--<script type="text/javascript" src="https://www.unidescription.org/js/unidescription.js"></script>	-->
+	    
+	    <!--<link href="https://www.unidescription.org/css/unidescription.css" rel="stylesheet">-->
+
+        <!-- Dependencies -->
+        <script src="https://www.unidescription.org/ableplayer/thirdparty/modernizr.custom.js"></script>
+        <script src="https://www.unidescription.org/ableplayer/thirdparty/js.cookie.js"></script>
+
+        <!-- CSS --> 
+        <link rel="stylesheet" href="https://www.unidescription.org/ableplayer/build/ableplayer.min.css" type="text/css"/>
+
+        <!-- JavaScript -->
+        <script src="https://www.unidescription.org/ableplayer/build/ableplayer.min.js"></script>
+
+        <style>
+/*
+        html, body {
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+*/
+        </style>
+
 	</head>
 	<body>
-        <p>updated master</p>
-		<p>{project.description}</p>
 
+        <div id="toc">
+            <h1>Sitka National Historical Park</h1>
+            <p></p>
+        </div>
+        
+        <main>
+            <nav>
+                <div width="50%">
+                        <ul>
+                                                    <li><a href="#4661">Overview</a>                                                    </li>                                                                                                                            <li><a href="#2719">The Story of Sitka</a>                                                            <ul>
+                                                                                                                <li><a href="#2720">Rainforest and Totem Poles</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2721">Russian Bishop's House</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2722">Bald Eagle</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2723">Russian Bishop's House Chapel</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2724">St. Michael's Cathedral</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2725">Totem Path</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2726">Russia-Alaska Map</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                                                <li><a href="#2727">The Tlingit People</a>                                                            <ul>
+                                                                                                                <li><a href="#2729">Tlingit Fishing Canoe</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2731">Berry Basket</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2728">Pink Salmon</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                                                <li><a href="#2730">Coming of the Anooshi</a>                                                            <ul>
+                                                                                                                <li><a href="#2732">Presbyterian Mission School</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2733">Potlach</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2734">Russian Orthodox Church</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2735">St. Michael's Church Model</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2737">Otter</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2736">Russian Bishop's House</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                                                <li><a href="#2738">Who Will Control These Lands?</a>                                                            <ul>
+                                                                                                                                                                                    <li><a href="#2741">Battle of 1804 Painting</a>                                                                                        </li>                                                                                                                                                    <li><a href="#2739">Russian Possession Plaque</a>                                                                                        </li>                                                                                                                                                                                                                                                                                                                </ul>
+                                                    </li>                                                                                                <li><a href="#2742">New Archangel and American Sitka</a>                                                            <ul>
+                                                                                                                <li><a href="#4423">Russian Leaders</a>                                                                                        </li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li><a href="#4424">The Tlingits</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#4269">Who Lives Here?</a>                                                            <ul>
+                                                                                                                <li><a href="#4270">Raven</a>                                                                                        </li>                                                                                                                                                    <li><a href="#4271">Sea Otters</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#4275">Totem Trail</a>                                                            <ul>
+                                                                                                                <li><a href="#4276">Yaadaas Crest Corner Pole</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                                                                    <li><a href="#4272">About Your Visit</a>                                                            <ul>
+                                                                                                                <li><a href="#4273">Map of Sitka National Historical Park</a>                                                                                        </li>                                                                                                    </ul>
+                                                    </li>                             
+                        </ul>
+                </div>
+            </nav>
+
+                                                              
+                      <h2 id="4661">Overview</h2>
+                      <a name="4661"></a>
+
+                      
+                                                                                            <p>This is the audio-only described version of the park’s official brochure. Through historic and contemporary photographs as well as illustrations, maps, and text, this brochure tells the story of the people who have inhabited this land and the nature of the land itself. From the Russians, Tlingits, and Americans to the salmon, ravens, otters, and eagles, this brochure provides an overview of the park’s natural and cultural history and the opportunities visitors have when they come to this place.&nbsp;</p>                                    <div>
+                                                                        <audio id="audio-4661" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-4661" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768859-12294898.txt.wav.mp3" >Overview</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768859-1344493030.txt.wav.mp3">Description of Overview</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                                      
+                      <h2 id="2719">The Story of Sitka</h2>
+                      <a name="2719"></a>
+
+                      
+                                                                                            <p><strong>Text:&nbsp;</strong></p><p>When They Tell the Story of Sitka...</p><p>...they remember a land of plenty and the people drawn to its wealth. The forest shrouding the land, the rivers running through it, and the sea around it provided everything needed to sustain a vigorous human community. Tlingits had thrived on the island they called Shee for countless generations before ambitious traders came from the west in search of new goods. Here Tlingits and Russians met, fought, and then uneasily coexisted for a time. When the Russians departed after six decades, both groups had been changed by the encounter. The Tlingits preserved their traditions as the Americans who replaced the Russians wrought their own changes. In the 1960s, after decades of acculturation and population decline, Tlingits began to reassert their culture. If you pay close attention to the landscape, artifacts, and artisans of Sitka National Historical Park, you will hear the story of the cultures who lived, and still live, on this island.</p><p><strong>Photo collage description:</strong>&nbsp;Along with the text, the upper half of side one of the brochure is filled with color photographs of the landscape, buildings, and artifacts. Below this row of images is a map of the world. Each is described individually under the headings that follow starting with the image on the left and then moving to the right.&nbsp;</p>                                    <div>
+                                                                        <audio id="audio-2719" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-2719" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768860-364586010.txt.wav.mp3" >The Story of Sitka</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768860-874241904.txt.wav.mp3">Description of The Story of Sitka</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Rainforest and Totem Poles </h3>
+                                            <a name="2720"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Walk through the temperate rain forest covering much of the park and see one of the finest collections of totem poles (right) in the Northwest.&nbsp;</p><p><strong>Photo description:&nbsp;</strong>Soft sunlight streams through the tall spruce and hemlock trees onto the rain forest floor, illuminating the leaves of young trees, berry bushes and devil's club that grow densely beneath the tall trees. On the left is a larger tree trunk, obscured by the branch and needles of a tree not fully seen.&nbsp;</p><p>On the right is a second, cut-out picture of the top portion of a totem pole, painted in the traditional colors of red, light greenish-blue and black. The top figure is a raven head with large, over dramatized eyes. Its dark beak with red lips juts out from the vertical pole. The raven figure sits atop a cylinder-shaped hat on the figure of a man. The hat has three teal rings painted on it and the man has dark thick eyebrows and lips. The rest of the totem pole cannot be seen.&nbsp;</p><p><strong>Photos credits: </strong>Totem Pole – Patrick J. Endres, AlaskaPhotographics; Rainforest NPS<br></p><br>                                                <div>
+                                                    <audio id="audio-2720" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2720" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768861-209881415.txt.wav.mp3" >Rainforest and Totem Poles</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768861-1602734164.txt.wav.mp3">Description of Rainforest and Totem Poles</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russian Bishop&#039;s House </h3>
+                                            <a name="2721"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>The Russian Bishop's House also served as a seminary and school for Native children.&nbsp;</p><p><strong>Photo description</strong><strong>:</strong> Green grass leads up to the yellow painted walls of a large, two-story rectangular building. The front of the building is lined downstairs with windows framed by white, open shutters. The windows are evenly spaced along the building, with a slight space between them. The windows are divided into six panes with white wood. The upstairs windows, placed directly above the downstairs windows, have a similar appearance but do not have shutters and have eight panes. Above this building front, is a red, slanted roof. Off to the right, attached to the building is a two-story gallery. The gallery has the same upstairs window design as the rest of the building, but the windows touch each other. Downstairs, it does not have windows, but two doors, which open to the front, onto a wooden, red, open porch. A blue sky peeks out from above the house.&nbsp;</p><p><strong>Photo credit:&nbsp;</strong>©Brian Hetherington<br></p>                                                <div>
+                                                    <audio id="audio-2721" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2721" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768863-306596075.txt.wav.mp3" >Russian Bishop&#039;s House</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768863-831506874.txt.wav.mp3">Description of Russian Bishop&#039;s House</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Bald Eagle </h3>
+                                            <a name="2722"></a>
+
+                                                                                                                                            <p><strong>Photo caption:&nbsp;</strong>Bald eagles and ravens thrive in the area.</p><p><strong>Photo description: </strong>&nbsp;A bald eagle is perched and upright on a branch, staring ahead. The eagle is pictured at an angle and its left eye, which is seen, has a black pupil surrounded by a light brown iris and a darker circle surrounding the iris. Characteristic for a bald eagle, white feathers cover the entirety of its head and tail, dark brown feathers make up the rest of the body and a big hooked yellow beak is a prominent feature of its head. Its powerful yellow feet, with long black talons, grip the branch it sits upon.&nbsp;</p><p><strong>Photo credit:&nbsp;</strong>© David Griebeling</p>                                                <div>
+                                                    <audio id="audio-2722" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2722" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768864-216878500.txt.wav.mp3" >Bald Eagle</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768864-1551809442.txt.wav.mp3">Description of Bald Eagle</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russian Bishop&#039;s House Chapel </h3>
+                                            <a name="2723"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Orthodox icons fill the Russian Bishop's House chapel.</p><p><strong>Photo description:</strong> This photo provides a view inside the Russian Bishop's House Chapel. We are facing the far wall in the white painted room. In the middle of the wall, are open double doors. The doors each have three, equally spaced, gold-framed icons displayed upon them. These and the other icons within the photo are too small to tell their contents, but each is generally a color painting framed in gold. They feature one or several religious figures in the Byzantine style. The paintings are embellished with gold and in some cases silver leaf paint. Often, a gold-painted halo surrounds the figure’s head. Some also incorporate highly embellished metals giving them dimension.</p><p>On the wall to the left and right of the open doors, hang rectangular icons. Above each, hangs a circular icon. The doors open into the nave or center part of the chapel and peek in on a view of a rectangular, box-shaped alter. The altar is draped with a light blue tapestry with gold accents and has a gold candelabra on top of it. An icon in a gold frame hangs above the altar.&nbsp;</p><p>In front of the far wall is the space called the iconostasis. Hanging in this space, in front of the icons that flank the open doubled doors, are two gold colored candelabras with white candles. In front of the iconostasis is the sanctuary of the chapel, which takes up a majority of the room. It has three altars which are equally spaced within the room and face the far wall. Each of these alters have a light blue tapestry draped over them, with a square icon displayed on top. The center altar is flanked by two tall candelabras with white candles.&nbsp;</p>&nbsp;<strong>Photo credit:&nbsp;</strong>Fred Hirschmann                                                <div>
+                                                    <audio id="audio-2723" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2723" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768865-1873611397.txt.wav.mp3" >Russian Bishop&#039;s House Chapel</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768865-1484805314.txt.wav.mp3">Description of Russian Bishop&#039;s House Chapel</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> St. Michael&#039;s Cathedral </h3>
+                                            <a name="2724"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Russian Orthodox missionaries built St. Michael's Cathedral in 1948.</p><p><strong>Photo description:&nbsp;</strong>The upper half of St. Michael's Cathedral is viewed from the front. Visible are the dome with the bell tower behind it and a Byzantine cross on top of each. The Byzantine cross has three horizontal bars with a shorter horizontal bar above the traditional bar and a shorter one on a skewed angle below. The building is wooden and painted gray with white trim. The dome and bell tower are copper, which has turned teal from exposure to the elements.&nbsp;</p><p><strong>Photo credit:&nbsp;</strong>Patrick J. Endres, ©AlaskaPhotographics</p>                                                <div>
+                                                    <audio id="audio-2724" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2724" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1509485888-622785080.txt.wav.mp3" >St. Michael&#039;s Cathedral</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1509485402-375723049.txt.wav.mp3">Description of St. Michael&#039;s Cathedral</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Totem Path </h3>
+                                            <a name="2725"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>The Tlingit living on Shee (now Baranof) Island called their village Shee At'iká, "people on the outside of Shee."  Today we call it Sitka.
+</p><p><strong>Photo description:</strong> A partial view of the Totem Trail winds through a spruce and hemlock tree rain forest. In the foreground on the right, a portion of a multi-colored totem pole peaks out behind vegetation. It is flanked by large tree trunks and is about as wide as some of these tree trunks. The carved figure visible on the totem pole is an interpretation of a bear's face. It has white cheeks, red lips, turquoise eyelids and dark eyes. To the left, in the background, the trail goes further into the forest, with a few visitors strolling down it.&nbsp;</p><p><strong>Photo caption: </strong>Patrick J. Endres, ©AlaskaPhotographics</p>                                                <div>
+                                                    <audio id="audio-2725" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2725" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768868-674026186.txt.wav.mp3" >Totem Path</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768868-1247396722.txt.wav.mp3">Description of Totem Path</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russia-Alaska Map </h3>
+                                            <a name="2726"></a>
+
+                                                                                                                                            <p><strong>Map caption: </strong>Alaska was one of the last places in the Americas to be settled by Europeans. The Russian American Company, headquartered in Irkutsk, Siberia, took the lead. From the port of Okhotsk it expanded its fur-trading operations via the Aleutians to Alaska in the late 1700s.</p><p><strong>Map description: </strong>An illustrated map centers on Alaska to the right and to the left, the far eastern portion of Russia where Okhotsk and the Kamchatka Peninsula are located. In the center of the map is the Bering Strait, which is a narrow passage of water that divides the land of the Northeastern tip of Russia and the western border of Alaska. Below Alaska and Russia are the Aleutian Islands, which is in an upward curving chain. In the upper left of the map on top of Russia is an image of the Asian continent on a globe. Russia is identified as is Irkutsk. Irkutsk is in the center, far southern part of Russia’s landmass close to Mongolia’s border.&nbsp;</p><p><strong>Map credit:</strong> NPS</p>                                                <div>
+                                                    <audio id="audio-2726" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2726" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1509485888-1134354288.txt.wav.mp3" >Russia-Alaska Map</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1509485493-1273139168.txt.wav.mp3">Description of Russia-Alaska Map</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                                                      
+                      <h2 id="2727">The Tlingit People</h2>
+                      <a name="2727"></a>
+
+                      
+                                                                                            <p><strong>Text:</strong> For the Tlingit, Haida, and other groups, Southeast Alaska was a hospitable land where the warm Japanese Current moderated temperatures- and kept Sitka's natural harbor free of ice year-round. Food resources were so abundant that the Tlingit essentially harvested whatever they needed. A maritime people, they drew much of their food from the sea and the rivers flowing into it. Salmon, the nutritious staple of their diet, was available in staggering quantities during the spawning runs. The Tlingit also fished on the open sea, wrestling 5-foot-long halibut into their canoes; hunted sea mammals; and gathered shellfish and edible seaweed. They hunted land animals and supplemented their diet with berries, grasses, and roots.&nbsp;</p><p>Cedar and other conifers in the great rain forest climbing the mountains behind Sitka provided the durable, straight-grained wood from which the Tlingit shaped much of their material world. They cut great beams and split planks to build their multi-family dwellings. Their basic structures were rectangular, pitched-roof buildings with round or oval entrances. From trunks they carved canoes up to 60 feet long, built in various types and sizes for fishing, sea travel, river travel, or war. They fashioned everyday implements from alder, like spoons and bowls, and crafted bentwood boxes to hold their large stocks of food and fish oil. Theirs was a bountiful life.&nbsp;</p>                                    <div>
+                                                                        <audio id="audio-2727" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-2727" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1509479632-1259068562.txt.wav.mp3" >The Tlingit People</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1509477590-1172697393.txt.wav.mp3">Description of The Tlingit People</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Tlingit Fishing Canoe </h3>
+                                            <a name="2729"></a>
+
+                                                                                                                                            <p><strong> </strong></p><p><strong> </strong></p><p><strong>Photo caption:</strong> Tlingit fishing canoe</p><p><strong>Photo description: </strong>This black and white photo is from the early 1900's and is right above the Tlingit People text on side one of the brochure. It shows a wooden Tlingit fishing canoe pulled out of the ocean, onto the rocky shore. There are some old wooden huts in the background, along the shore. Vegetation grows behind the huts.&nbsp;</p><p><strong>Photo credit:&nbsp;</strong>NPS Merrill Collection</p>                                                <div>
+                                                    <audio id="audio-2729" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2729" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768871-338672666.txt.wav.mp3" >Tlingit Fishing Canoe</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768871-244106940.txt.wav.mp3">Description of Tlingit Fishing Canoe</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Berry Basket </h3>
+                                            <a name="2731"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Berry basket woven of spruce root.</p><p><strong>Photo description: </strong>A photo cutout of a berry basket is located next to the image of the Tlingit canoe. The basket is woven from light-brown spruce root. Some roots were dyed in different shades of brown to create a good contrast to the base color. These darkly-dyed roots are woven in decoratively and circle the basket with three bands. The upper and lower bands are the exact same graphic pattern with light brown crosses and diamonds in the center. The middle decorative pattern consists of two rows of staggered but connected diamond shapes that give the appearance of a string of leaves.</p><p><strong>Photo credit:&nbsp;</strong>NPS</p>                                                <div>
+                                                    <audio id="audio-2731" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2731" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768872-64278241.txt.wav.mp3" >Berry Basket</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768872-1396616329.txt.wav.mp3">Description of Berry Basket</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Pink Salmon </h3>
+                                            <a name="2728"></a>
+
+                                                                                                                                            <p><strong>Photo caption :&nbsp;</strong>Pink salmon crowd the Indian River during their spawning run. These runs peak in mid-August, but can extend from mid-July into October.</p><p><strong>Photo description: </strong>Across the bottom of side one of the brochure, this photo is an underwater view of a packed group of Pink Salmon. Pink salmon can be differentiated by the large oval spots on their backs and tails. They have almost yellowish fins, a white belly and a dark back. Rays of sunlight filter through, accenting different parts of the salmon and water.<strong> &nbsp;</strong></p><p><strong>Photo credit:&nbsp;</strong>Patrick J. Endres, ©AlaskaPhotographics</p>                                                <div>
+                                                    <audio id="audio-2728" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2728" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768873-1476897651.txt.wav.mp3" >Pink Salmon</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768873-1353993160.txt.wav.mp3">Description of Pink Salmon</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                                                      
+                      <h2 id="2730">Coming of the Anooshi</h2>
+                      <a name="2730"></a>
+
+                      
+                                                                                            <p><strong>Text:&nbsp;</strong>Vitus Bering’s 1741 voyage of exploration for Russia brought the first Europeans to Alaska. The sea otter pelts they took home to show the Czar drew them back to stay, and the area was soon overrun with Russian promyshlenniki—free-ranging hunters and fur traders. The Russians (called Anooshi by the Tlingits) were likely the first Old World traders to encounter Alaska Natives. Through barter and coercion the promyshlenniki used the skills of the native Aleutians—the Aleuts—to gather the profitable pelts. By 1784 a Russian trading company employing promyshlenniki had established a station on Kodiak Island, and forced Aleuts to hunt sea otter and other sea mammals. Russia remained the dominant power in the North Pacific for 125 years.</p><p>Wanting to stabilize Russia’s foothold in the New World, Czar Paul I in 1799 granted a monopoly to the Russian-American Company, giving the company’s manager Alexander Baranov the powers of a colonial governor. Baranov had already been pushing operations east and south from Kodiak Island to extend Russia’s territorial claims and thwart growing competition in the fur trade from England and the United States. He also wanted to stop the British and American practice of trading guns to the Tlingits, a powerful group in Southeast Alaska. To those ends he planned to establish a fortified station on Baranof Island, the one called Shee by its native inhabitants.</p><p><strong>Photo descriptions: </strong>On the bottom middle right half of side one of this brochure are a series of black and white photographs next to a photo of the Tlingit canoe and berry basket. They are described from left to right under individual subheadings that follow. <strong>&nbsp;</strong></p>                                    <div>
+                                                                        <audio id="audio-2730" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-2730" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768874-202766126.txt.wav.mp3" >Coming of the Anooshi</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768874-539675037.txt.wav.mp3">Description of Coming of the Anooshi</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Presbyterian Mission School </h3>
+                                            <a name="2732"></a>
+
+                                                                                                                                            <p><strong>Photo caption:</strong> Tlingit girls at the Presbyterian mission school</p><p><strong>Photo description:</strong> Taken in the 1900s, a group of 20 Tlingit girls in white Sunday dresses are on the porch of the Presbyterian Mission school. They are in three rows. The girls in the first row are seated on the porch floor. Behind them, the two rows of girls stand. They wear ribbons and bows in their long tied or braided hair. In contrast with the white fabric, all of them wear black leggings and high-buttoned boots to their mid-calf dresses. In their midst stands a middle-aged white woman, presumably their teacher also dressed in white.</p><p><strong>Photo credit:</strong> NPS Merrill Collection</p><br>                                                <div>
+                                                    <audio id="audio-2732" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2732" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768876-257079485.txt.wav.mp3" >Presbyterian Mission School</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768876-1874314187.txt.wav.mp3">Description of Presbyterian Mission School</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Potlach </h3>
+                                            <a name="2733"></a>
+
+                                                                                                                                            <p><strong>Photo caption:</strong>&nbsp;Ceremonial dress for 1904 potlach.</p><p><strong>Photo description:</strong> Three native men in ceremonial dress and regalia stand on the boardwalk before some house steps. The man in the center wears a beaded shirt, a bib, skin boots and has a Coho Dance baton in his hand. The baton is a long wooden stick that expands into what looks like a flat paddle. It is approximately 1.5 times his size. The paddle section of the baton is of a man-sized carved Salmon. The men on the left and right wear ermine-skin shirts and hold a raven and an octopus button, which are long boards they use while dancing. Two of them wear a big nose ring through their nasal septum.</p><p><strong>Photo credit: </strong>NPS Merrill Collection<strong> </strong></p>                                                <div>
+                                                    <audio id="audio-2733" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2733" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768877-1693461419.txt.wav.mp3" >Potlach</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768877-129190146.txt.wav.mp3">Description of Potlach</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russian Orthodox Church </h3>
+                                            <a name="2734"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Russian Orthodox clergy and seminarians.</p><p><strong>Photo description: </strong>A group of nine men stands on the steps of St. Michael’s Cathedral. Each wears a long robe. Some robes are highly embellished with decorative patterns and embroidery. Some also wear cylindrical hats. Bishop Phillip, whose dress is the most embellished, stands in the front center. The two men behind him hold ornate candle holders, each with a long candle in the holder. The photo was taken in the 1900s.</p><p><strong>Photo credit: </strong>NPS Merrill Collection</p><p><strong><br></strong></p><br>                                                <div>
+                                                    <audio id="audio-2734" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2734" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768880-1334097639.txt.wav.mp3" >Russian Orthodox Church</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768881-122927375.txt.wav.mp3">Description of Russian Orthodox Church</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> St. Michael&#039;s Church Model </h3>
+                                            <a name="2735"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Russians with model of St. Michael’s.</p><p><strong>Photo description: </strong>Approximately 40 Russian children, women, and men of all ages are gathered outside around a miniature model of St. Michael's Cathedral. The model sits on a platform about two feet off of the ground. The model is approximately three to four feet tall. The builder sits on the platform where the model is placed and holds a T-square. The people stare ahead, unsmiling. This photo was taken in the 1900s.</p><p><strong>Photo credit: </strong>NPS Merrill Collection</p>                                                <div>
+                                                    <audio id="audio-2735" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2735" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768882-458593684.txt.wav.mp3" >St. Michael&#039;s Church Model</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768882-514774060.txt.wav.mp3">Description of St. Michael&#039;s Church Model</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Otter </h3>
+                                            <a name="2737"></a>
+
+                                                                                                                                            <p><strong> </strong></p><p><strong>Photo caption: </strong>Sea otter</p><p><strong>Photo description: </strong>A color photo cutout of a brown, fuzzy sea otter floating in the water on its back, which is one of the typical positions for otters. Its head is lifted and the otter looks ahead. Its paws are out of the water close to the bottom front of its head.</p><p><strong>Photo credit: </strong>©Ken Schneider</p>                                                <div>
+                                                    <audio id="audio-2737" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2737" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768883-639292466.txt.wav.mp3" >Otter</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768883-1129469009.txt.wav.mp3">Description of Otter</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russian Bishop&#039;s House </h3>
+                                            <a name="2736"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>Russian Bishop's House</p><p><strong>Photo description: </strong>Father Methodius, with a long black frock, hat and big cross necklace, stands outside in the garden behind the Russian Bishop’s House. Six men are positioned behind him - either laying in the long grass, leaning leisurely on the bee hives, or standing relaxed behind the others. Sitka Sound and the approximately chest high wooden fence are visible in the far back.</p><p><strong>Photo credit: </strong>NPS Merrill Collection&nbsp;</p>                                                <div>
+                                                    <audio id="audio-2736" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2736" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768884-1494975566.txt.wav.mp3" >Russian Bishop&#039;s House</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768885-2029214811.txt.wav.mp3">Description of Russian Bishop&#039;s House</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                                                      
+                      <h2 id="2738">Who Will Control These Lands?</h2>
+                      <a name="2738"></a>
+
+                      
+                                                                                            <p><strong>Text:&nbsp;</strong>The Russian American Company's desire to establish an outpost in Southeast Alaska inevitably led to conflict. Under the direction of company manager Alexander Baranov, a group of Russians, Alutiiq, and other Native Alaskans constructed the first non-Native settlement near Starrigavan Bay in 1799. Powerful leaders of the Kiks.di clan quickly grew to resent the Russian intrusion. In 1802, they attacked the Starrigavan settlement, Redoubt St. Michael, and killed most of its Russian, Aleut, and Alutiiq inhabitants.&nbsp;</p><p>After the Tlingit drove the Russians from Sitka in 1802, Tlingit Shaman Stoonookw predicted the Russians would return. He urged the clans to build a new fortification strong enough to withstand cannon fire. The Kiks.ádi chose an area near present-day Indian River for their new fort (Shis'gi Noow) because it was close to food and fresh water, but out of range of the ship artillery. When the Russian ships appeared at the mouth of Indian River (Kaasda Heen) on September 28, 1804, Kiks.ádi preparations were tested by a siege and multi-day bombardment.&nbsp;</p><p>Two fateful events worked against the Kiks.adi- the unexpected arrival of the Russian frigate <em>Neva </em>and the loss of the canoe carrying their reserve ammunition and most seasoned warriors right before the battle. Russian forces boldly waded ashore in a frontal attack on Shis'gi Noow on October 1, 1804. They were driven back from the fort to the beach when Tlingit defenses held. Hidden behind floating logs, Kiks.adi warriors counter-attacked. They were led by K'alyaan (Katlian) wielding the blacksmith's hammer he had won in 1802. Russian forces retreated to their ships and laid siege. After six days the Kiks.ádi withdrew from the fort and marched north to Peril Strait. There they set up a trade blockade, while continuing to hunt, fish and gather wild food in and near Sitka Sound. Today, Sitka National Historical Park preserves and interprets the site of this battle.&nbsp;</p><p><strong>Text and image descriptions:</strong> This text and a painting and bronze plaque to its left are located on most of the top left side of side two of this brochure. The painting and plaque are described under their own subheadings that follow.&nbsp;</p>                                    <div>
+                                                                        <audio id="audio-2738" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-2738" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1509479635-2023890349.txt.wav.mp3" >Who Will Control These Lands?</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1509477999-22479294.txt.wav.mp3">Description of Who Will Control These Lands?</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                                                                                                <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Battle of 1804 Painting </h3>
+                                            <a name="2741"></a>
+
+                                                                                                                                            <p><strong> </strong></p><p><strong>Painting description: </strong>The painting depicts the scene of the 1804 battle at the mouth of the Indian River. In the foreground, the Tlingit warriors are equipped with long guns and spears. Some wear protective wooden war helmets and a thick wooden breast shield. The strong wall of logs in the right corner is part of the fort the Tlingit built for this battle.</p><p>The battle’s leader Katlian wears a raven war helmet and a gray fur around his naked upper torso. His weapon is a blacksmith hammer, which he holds upright in a striking position along with his other arm, which is held upright with a clenched fist. He storms into the scene, leading a group of warriors to the battleground. They are all lunging forward. One Tlingit is already dead on the ground. Though the cause of death cannot be seen, the arrows around him suggest he was killed by one of them.</p><p>Further in the background, a rain of arrows come from the Aleut and Alutiiq natives who accompany the Russians. Behind them is the Sitka Sound with three Russian vessels and a flood of small canoes, holding one person each. In the distance behind the water is the mountain range.</p><p><strong>Painting credit: </strong>©Louis S. Glanzman</p>                                                <div>
+                                                    <audio id="audio-2741" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2741" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768889-1648517203.txt.wav.mp3" >Battle of 1804 Painting</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768889-1270321215.txt.wav.mp3">Description of Battle of 1804 Painting</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russian Possession Plaque </h3>
+                                            <a name="2739"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>This bronze plaque, buried in 1799 at Redoubt St. Michael on Baranof Island, reads “Land of Russian Possession.”<strong> </strong></p><p><strong>Photo description: </strong>The possession plaque, which is superimposed over a top portion of the Battle of 1804 painting, is a thin square piece of bronze. It shows a big cross on top, a band of Cyrillic text in the middle that translates into “Land of Russian Possession” and a running number at the bottom.</p><p><strong>Photo credit: </strong>NPS</p>                                                <div>
+                                                    <audio id="audio-2739" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-2739" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768890-1668092862.txt.wav.mp3" >Russian Possession Plaque</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768890-1722150134.txt.wav.mp3">Description of Russian Possession Plaque</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                      <h2 id="2742">New Archangel and American Sitka</h2>
+                      <a name="2742"></a>
+
+                      
+                                                                                            <p><strong>Text:</strong> Baranov made Shee At’iká the Russian American Company’s headquarters, renaming it New Archangel—though it was commonly called Sitka. On the rocky promontory now called Castle Hill he located his home and harbor fortifications. The Russians never became self-sufficient depending on fresh food from the Tlingit who had stayed in the area. The company remained wary of them, maintaining a stockade between the communities. The Russian Orthodox mission, though, established a sympathetic relationship with the Tlingit.</p>
+<p>By the mid-1800s the Russian government had grown disenchanted with its stake in America. When the United States offered to buy Alaska in 1867, Russia accepted and Sitka became a US territorial capital. In 1890 the US government created a federal reserve, Indian River Park, at the mouth of the river. The park was designated Sitka National Monument in 1910, then became part of the National Park System when that system was established in 1916. In 1972, with the addition of the Russian Bishop’s House, it was re-designated Sitka National Historical Park.</p><p><strong>Text and image descriptions:</strong>&nbsp;This text is on the right top side of side two of the brochure. Underneath it and across the upper middle section of the brochure are a series of images, which are described under two subheadings that follow.</p>                                    <div>
+                                                                        <audio id="audio-2742" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-2742" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768894-291988526.txt.wav.mp3" >New Archangel and American Sitka</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768894-1514813035.txt.wav.mp3">Description of New Archangel and American Sitka</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Russian Leaders </h3>
+                                            <a name="4423"></a>
+
+                                                                                                                                            <p><strong>Photo Caption:</strong> Fur Trader Alexander Baranov became head of the Russian American Company. He paved the way for Russian Orthodox missionaries like Ioann Veniaminov (1797 - 1879) who built schools for the Tlingit and created a Tlingit alphabet. In 1840 Veniaminov was named Bishop Innocent. Both men served the Russian Czar, symbolized by the double-headed eagle.&nbsp;</p><p><strong>Photo descriptions:</strong> To the left of the captioned text on side two of the brochure are three images. From left to right they are:</p><ol><li>A black and white portrait of Father Ioann Veniaminov as a young man. He has wavy, below-the-shoulder length hair, a mustache and a longer goatee-style beard with shorter sides. He is wearing a large, loose-fitting, long-sleeved, dark robe. His gaze is upwards and at an angle. He has large eyes and sharp, angular facial features. He wears a cylinder shaped, rear-veiled, dark cap, called a klobuk, atop his head. Around his neck is a ribbon-chained necklace with an icon pendant, as well as a gold-chain necklace with a cross pendant. His hands are resting in his lap. His left hand, with a beaded rosary around the wrist, grips a paper scroll. <strong>Image credit: </strong>Library of Congress<br></li><li>A black and white portrait of the head of the Russian American Company, Alexander Baranov. He is middle aged with a half-bald head, making his forehead appear large. His round eyes stare ahead and he leans slightly forward. Above his small mouth and chin hang jowls. Around his neck is a ribbon necklace with a cross pendant. His double-breasted coat is buttoned, with a white-collared shirt exposed. His bent arm rests on a surface in front of him and he holds a quill pen as if he is signing something. <strong>Image credit: </strong>Library of Congress</li><li>A color, cutout photograph of a gold or brass metallic, double-headed eagle that looks like a coat of arms. The heads and necks of the eagles are in profile and are facing in opposite directions--one to the left and the other to the right. Both wear a crown with a cross on top of their heads. A single wing is outstretched on either side. &nbsp;In the eagle's left claw, it holds a scepter. In its right claw, it holds an orb. On its breast is an escutcheon or shield bearing the coat of arms of a dragon-slaying St. George on a galloping horse. <strong>Photo</strong><strong>&nbsp;credit: </strong>Alaska State Museum</li></ol><br>                                                <div>
+                                                    <audio id="audio-4423" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-4423" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768895-229713014.txt.wav.mp3" >Russian Leaders</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768896-25593052.txt.wav.mp3">Description of Russian Leaders</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> The Tlingits </h3>
+                                            <a name="4424"></a>
+
+                                                                                                                                            <p><strong>Photo caption:</strong> The Tlingit encountered by the Russians were a vital, complex society. The Tlingit were divided into moieties, the Eagle and Raven. Clans, the basic social and economic units, controlled resources and trade routes. So abundant was food that large surpluses were created, allowing the Tlingit time to bring decorative design to every area of their lives.&nbsp;</p><p><strong>Photo descriptions:</strong> To the right of this text on side two of the brochure are three images. From left to right they are:</p><ol><li>A color photo of the war helmet worn by the battle leader Katlian in 1804. It is carved in the form of a raven head which includes its eyes and beak. Due to its age, the material looks torn and fragile. It seems as if the helmet was once fully covered with fur. In this image, most of the fur is missing and only tufts in sections of the helmet are visible. A big crack is visible in the bottom right portion of the helmet that leads up to the beak. <strong>Photo credit: </strong>Peter Metcalfe</li><li>&nbsp;Kiks.ádi battle leader Katlian used a blacksmith’s hammer as his weapon for the 1804 battle against the Russians. In this cutout photograph of the hammer, the metal head looks old and used, with outworn striking surfaces and heavily scratched sides. The handle has been exchanged and looks relatively new and smooth. <strong>Photo credit</strong>: K'alyaan's Hammer- Kiks.ádi Clan&nbsp;</li><li>In this black and white photo, a large group of Tlingit stand in front of their wooden-sided clan house. They hold different decorative objects. Some are dressed in traditional cloth with flamboyant designs, others are dressed in simple American-looking suits, ties, and hats. Among the presented objects are rattles, drums, long guns and a life-size puppet that sits in front of the group. Many of the men wear big nose rings through the nasal septum and have painted faces. <strong>Photo credit:</strong> Tlingit Group- Alaska State Library</li></ol>                                                <div>
+                                                    <audio id="audio-4424" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-4424" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768902-647661184.txt.wav.mp3" >The Tlingits</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768902-1673154745.txt.wav.mp3">Description of The Tlingits</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="4269">Who Lives Here?</h2>
+                      <a name="4269"></a>
+
+                      
+                                                                                            <p><strong>Text:</strong> The convergence of the Indian River, Pacific Ocean, and coastal rain forest creates a biologically rich habitat. This temperate rain forest ecosystem is dominated by towering Sitka spruce and Western hemlock. Brown bears, river otters, mink, and black-tailed deer frequent the area. The park's intertidal zone teems with marine invertebrates like sea stars, limpets, and barnacles. The area hosts 150 bird species, and pink salmon runs sometimes pack the Indian River with over tens of thousands of fish.&nbsp;</p><p>Salmon are the ultimate recyclers: Aquatic insects, a critical food source for juvenile salmon, feed on organic nutrients in the Indian River. Salmon eventually head to sea to feed on rich ocean resources. Mature salmon return to the river to spawn and die. Their carcasses provide food for bears, ravens, and eagles and add nutrients to the stream ecosystem, jump-starting a new generation of salmon.&nbsp;</p>                                    <div>
+                                                                        <audio id="audio-4269" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-4269" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768904-2038886799.txt.wav.mp3" >Who Lives Here?</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768904-263675811.txt.wav.mp3">Description of Who Lives Here?</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Raven </h3>
+                                            <a name="4270"></a>
+
+                                                                                                                                            <p><strong>Photo description: </strong>In this color photo, a deep black raven has its outstretched wings pulled towards its back as if about to land. This position highlights its wedge-shaped tail and its tail’s longer middle feathers.</p><p><strong>Photo credit: </strong>Patrick J. Endres, Alaskaphotographics</p>                                                <div>
+                                                    <audio id="audio-4270" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-4270" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768905-192059239.txt.wav.mp3" >Raven</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768905-669147251.txt.wav.mp3">Description of Raven</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Sea Otters </h3>
+                                            <a name="4271"></a>
+
+                                                                                                                                            <p><strong> Photo caption: </strong>Sea Otters thrive in the waters around Sitka. &nbsp;</p><p><strong>Photo description: </strong>A group of sea otters float in the water with their heads upright as they look around. Their thick, wet fur is dark brown. Their faces are light brown and they have long whiskers. Due to their high buoyancy, not only are their heads and front paws above the water level, but also their hind feet and parts of their bellies.</p><p><strong>Photo credit: </strong>Patrick J. Endres, Alaskaphotographics&nbsp;<br></p>                                                <div>
+                                                    <audio id="audio-4271" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-4271" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768905-949014541.txt.wav.mp3" >Sea Otters</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768905-378546534.txt.wav.mp3">Description of Sea Otters</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="4275">Totem Trail</h2>
+                      <a name="4275"></a>
+
+                      
+                                                                                            <p><strong>Text:</strong> The Totem Trail is a 1-mile loop trail through temperate rain forest, where you will find a remarkable collection of totem poles carved by Tlingit and Haida artists. The poles have been park of the Sitka story since 1901, when a collection of poles donated by villages from southern Southeast Alaska were shown at national expositions in 1904 and 1905, then shipped to Sitka and erected in Indian River Park. Traditionally the poles were allowed to deteriorate naturally, and many of those you see today are replicas.&nbsp;</p><p>Woodcarving is a fundamental art form of Northwest American Indian cultures, and the totem pole is among their highest achievements. These are public records, displays of identity and clan pride serving several functions: Crest poles record the ancestry of a family; legend poles recount a clan's story; and memorial poles commemorate an individual clan member.&nbsp;</p><p>The art of carving totem poles lives in Sitka: A few of the park's poles have been raised in 1976. Tribal organizations continue to carve poles that address themes like wellness and healing.&nbsp;</p>                                    <div>
+                                                                        <audio id="audio-4275" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-4275" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1509479635-719008350.txt.wav.mp3" >Totem Trail</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1509478375-171826591.txt.wav.mp3">Description of Totem Trail</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Yaadaas Crest Corner Pole </h3>
+                                            <a name="4276"></a>
+
+                                                                                                                                            <p><strong>Photo caption: </strong>A village watchman tops the Yaadass Crest corner pole.</p><p><strong>Photo description: </strong>A red, turquoise and black painted totem pole stands among the spruce and hemlock trees of the rain forest. The village watchman, a figure of a man with a tall, cylinder-shaped hat is on the top of the pole. Below the man are three other figures: a raven in human form, a Raven as raven, and a Bear at the bottom of the pole.<strong> </strong></p><p><strong> </strong><strong>Photo credit: </strong>Patrick J. Endres, AlaskaPhotographics &nbsp;</p>                                                <div>
+                                                    <audio id="audio-4276" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-4276" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768907-1635239332.txt.wav.mp3" >Yaadaas Crest Corner Pole</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768907-941574500.txt.wav.mp3">Description of Yaadaas Crest Corner Pole</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                                                          
+                      <h2 id="4272">About Your Visit</h2>
+                      <a name="4272"></a>
+
+                      
+                                                                                            <p></p><ul><li>The park visitor center houses a collection of Tlingit artifacts, many of them loaned to the National Park Service by Tlingit clans. "The Voices of Sitka" video connects the stories of Sitkans present and past. Native artists work in studios devoted to textile arts, carving, and metal work. Completed in 1843, the Russian Bishop's House was Bishop Innocent's home and diocese administrative center.&nbsp;<br></li><li>The park visitor center is open daily, mid-May through September, 8 am to 5 pm. From October to mid-May, hours vary.&nbsp;<br></li><li>The park trails are open daily mid-May through September, 6 am to 10 pm, and October to mid-May, 7 am to 8 pm. The Russian Bishop's House is open daily mid-May through September, 9 am to 5 pm. Ranger-led tours are offered every 30 minutes. From October to mid-May the house is open by appointment only. Call 907-747-0110 to schedule a tour.&nbsp;</li><li>Accessibility: We strive to make our facilities, services, and programs accessible to all. The historical features of some locations at the park provide unique challenges to accessibility. The second floor of the Russian Bishop's House is accessed via stairs only. A video on the first floor describes the second-floor features.&nbsp;</li><li>More information: Sitka National Historical Park; 103 Monastery Street; Sitka, Alaska, 99835; 907-747-0110</li></ul><p></p>                                    <div>
+                                                                        <audio id="audio-4272" preload="auto" data-able-player> </audio>
+                                        <!-- first playlist (embedded) -->
+                                        <ul class="able-playlist" data-player="audio-4272" data-embedded>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768907-985881268.txt.wav.mp3" >About Your Visit</li>
+                                          <li data-mp3="https://api.montanab.com/tts/tmp/1501768907-153880341.txt.wav.mp3">Description of About Your Visit</li>
+                                        </ul>
+                                        <a href="#toc">&uarr; back to top</a>
+                                    </div>
+                            
+                                                        
+                                                                                                                                            <h3 style="font-weight:bold; margin-top:5px; margin-bottom:5px; padding:12px 0; border-top:1px dotted #000;"> Map of Sitka National Historical Park </h3>
+                                            <a name="4273"></a>
+
+                                                                                                                                            <p><strong>Map description:</strong>&nbsp;In the lower middle half of side two of the brochure is an illustrated map. The map identifies the layout of downtown Sitka and the grounds of Sitka National Historical Park. The park is approximately 113 acres and is a half of a mile from downtown Sitka. The left of the map is also the west side of Sitka’s downtown area and one of two cruise ship tender docks. Areas of interest include:</p><p></p><ul><li>Baranof Castle Hill State Historic Site&nbsp;<br></li><li>Totem Square&nbsp;<br></li><li>Site of Russian stockade and blockhouses&nbsp;<br></li><li>Alaska Native Brotherhood Hall&nbsp;<br></li><li>Site of Tlingit village and reconstructed blockhouse&nbsp;<br></li><li>Russian Cemetery &nbsp;<br></li><li>Saint Michael’s Cathedral&nbsp;<br></li></ul><p></p><p>Going east along the Sitka Sound shoreline is the second cruise ship tender dock located in Crescent Harbor. The Harrington Centennial Hall Sitka Historical Museum and the Russian Bishop’s House are located close by.&nbsp;</p><p>Continuing east en route to the park via Lincoln Street for approximately one-fourth of a mile are the park grounds. The Sheldon Jackson Museum is close by and the Park Visitor Center is the first place you will arrive at in the park. A restroom is available there.&nbsp;</p><p>The park has two main masses of land divided by the Indian River into a lower section, which largely borders the Sitka Sound on the park’s west and south side and the Indian River on this lower section’s upper side. The upper section of the park is bordered by the Indian River on its lower side and land on its upper side, which is also the north and east border of the park.</p><p>The Totem Trail is east of the Visitor Center and travels in a long oval around the lower section of the park. Halfway along the trail at the tip of the landmass and the Sitka Sound is where the 1804 Battle of Sitka occurred. Continuing to travel towards the Indian River on this trail is the Kiks-ádi Fort site.</p><p>Another trail from behind the Visitor Center traveling due east crosses the Indian River to the upper section of the park. A restroom is available there. Like the lower section of the park, there is also a long oval trail that leads down to the edge of the land that meets the water where the Russian Memorial is located.</p>                                                <div>
+                                                    <audio id="audio-4273" preload="auto" data-able-player> </audio>
+                                                    <!-- first playlist (embedded) -->
+                                                    <ul class="able-playlist" data-player="audio-4273" data-embedded>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768908-873740350.txt.wav.mp3" >Map of Sitka National Historical Park</li>
+                                                      <li data-mp3="https://api.montanab.com/tts/tmp/1501768909-1048309813.txt.wav.mp3">Description of Map of Sitka National Historical Park</li>
+                                                    </ul>
+                                                </div>
+                                                <a href="#toc">&uarr; back to top</a>
+
+                                            
+                                                                                                                                                                                                                    
+        </main>
+
+<script type="text/javascript">
+// Select all links with hashes
+$(document).ready(function() {
+console.log('in docready');
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    event.stopPropagation();
+console.log('inside clicky');
+    {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+});
+</script>
+
+        
 	</body>
 </html>
